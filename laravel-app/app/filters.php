@@ -49,10 +49,10 @@ App::after(function($request, $response)
 });*/
 Route::filter('auth', function()
 {
-    if (Auth::guest()) 
-        return Redirect::guest('/')
-                ->with('flash_notice', 'You must be logged in to view this page!');
-    // if (Auth::guest()) return Redirect::guest('login');
+	if (Auth::guest())
+		return Redirect::guest('/')
+			->with('flash_notice', 'You must be logged in to view this page!');
+	// if (Auth::guest()) return Redirect::guest('login');
 });
 
 
@@ -78,8 +78,20 @@ Route::filter('auth.basic', function()
 });*/
 Route::filter('guest', function()
 {
-    if (Auth::check()) return Redirect::to('/home');
-    // if (Auth::check()) return Redirect::to('/');
+	if (Auth::check()) return Redirect::to('/home');
+	// if (Auth::check()) return Redirect::to('/');
+});
+
+/*Route::filter('ohadmin', function()
+{
+	if (Auth::check()) return Redirect::to('/');
+});*/
+Route::filter('ohadmin', function()
+{
+	if (Auth::check()) {
+		return Redirect::to('backend');
+	}
+	// if (Auth::check()) return Redirect::to('/');
 });
 
 /*
@@ -108,9 +120,9 @@ Route::filter('dashboard', function($route, $request)
 	$action = $route->getAction();
 	$action = $action['controller'];
 	$access = false;
-    if (str_contains($action, 'index')) {
-    	if (Entrust::can('view_graphic_report_dealer_status')) $access = true;
-    }
+	if (str_contains($action, 'index')) {
+		if (Entrust::can('view_graphic_report_dealer_status')) $access = true;
+	}
 	if (!$access) {
 		return Redirect::to('/permission-deny')->with('flash_notice_error', Config::get('globle.deny'));
 	}
@@ -121,15 +133,15 @@ Route::filter('announcements', function($route, $request)
 	$action = $route->getAction();
 	$action = $action['controller'];
 	$access = false;
-    if (str_contains($action, 'index') || str_contains($action, 'search')) {
-    	if (Entrust::can('view_announcement')) $access = true;
-    } else if (str_contains($action, 'create') || str_contains($action, 'store')) {
-    	if (Entrust::can('add_announcement')) $access = true;
-    } else if (str_contains($action, 'edit') || str_contains($action, 'update')) {
-    	if (Entrust::can('edit_announcement')) $access = true;
-    } else if (str_contains($action, 'destroy')) {
-    	if (Entrust::can('delete_announcement')) $access = true;
-    }
+	if (str_contains($action, 'index') || str_contains($action, 'search')) {
+		if (Entrust::can('view_announcement')) $access = true;
+	} else if (str_contains($action, 'create') || str_contains($action, 'store')) {
+		if (Entrust::can('add_announcement')) $access = true;
+	} else if (str_contains($action, 'edit') || str_contains($action, 'update')) {
+		if (Entrust::can('edit_announcement')) $access = true;
+	} else if (str_contains($action, 'destroy')) {
+		if (Entrust::can('delete_announcement')) $access = true;
+	}
 
 	if (!$access) {
 		return Redirect::to('/permission-deny')->with('flash_notice_error', Config::get('globle.deny'));
@@ -141,18 +153,18 @@ Route::filter('dealers', function($route, $request)
 	$action = $route->getAction();
 	$action = $action['controller'];
 	$access = false;
-    if (str_contains($action, 'index') || str_contains($action, 'search') || str_contains($action, 'show')) {
-    	if (Entrust::can('view_dealer')) $access = true;
-    } else if (str_contains($action, 'create') || str_contains($action, 'store')) {
-    	if (Entrust::can('add_dealer')) $access = true;
-    } else if (str_contains($action, 'edit') || str_contains($action, 'update')) {
-    	if (Entrust::can('edit_dealer')) $access = true;
-    } else if (str_contains($action, 'destroy')) {
-    	if (Entrust::can('delete_dealer')) $access = true;
-    } else if (str_contains($action, 'getDealerByKhanCode')) {
-    	if (Entrust::can('add_sale_staff') || Entrust::can('edit_sale_staff')) $access = true;
-    }
-    
+	if (str_contains($action, 'index') || str_contains($action, 'search') || str_contains($action, 'show')) {
+		if (Entrust::can('view_dealer')) $access = true;
+	} else if (str_contains($action, 'create') || str_contains($action, 'store')) {
+		if (Entrust::can('add_dealer')) $access = true;
+	} else if (str_contains($action, 'edit') || str_contains($action, 'update')) {
+		if (Entrust::can('edit_dealer')) $access = true;
+	} else if (str_contains($action, 'destroy')) {
+		if (Entrust::can('delete_dealer')) $access = true;
+	} else if (str_contains($action, 'getDealerByKhanCode')) {
+		if (Entrust::can('add_sale_staff') || Entrust::can('edit_sale_staff')) $access = true;
+	}
+
 	if (!$access) {
 		return Redirect::to('/permission-deny')->with('flash_notice_error', Config::get('globle.deny'));
 	}
@@ -163,15 +175,15 @@ Route::filter('dealer-terminals', function($route, $request)
 	$action = $route->getAction();
 	$action = $action['controller'];
 	$access = false;
-    if (str_contains($action, 'index') || str_contains($action, 'search')) {
-    	if (Entrust::can('view_dealer_link_terminal')) $access = true;
-    } else if (str_contains($action, 'create') || str_contains($action, 'store')) {
-    	if (Entrust::can('add_dealer_link_terminal')) $access = true;
-    } else if (str_contains($action, 'edit') || str_contains($action, 'update')) {
-    	if (Entrust::can('edit_dealer_link_terminal')) $access = true;
-    } else if (str_contains($action, 'destroy')) {
-    	if (Entrust::can('delete_dealer_link_terminal')) $access = true;
-    }
+	if (str_contains($action, 'index') || str_contains($action, 'search')) {
+		if (Entrust::can('view_dealer_link_terminal')) $access = true;
+	} else if (str_contains($action, 'create') || str_contains($action, 'store')) {
+		if (Entrust::can('add_dealer_link_terminal')) $access = true;
+	} else if (str_contains($action, 'edit') || str_contains($action, 'update')) {
+		if (Entrust::can('edit_dealer_link_terminal')) $access = true;
+	} else if (str_contains($action, 'destroy')) {
+		if (Entrust::can('delete_dealer_link_terminal')) $access = true;
+	}
 
 	if (!$access) {
 		return Redirect::to('/permission-deny')->with('flash_notice_error', Config::get('globle.deny'));
@@ -183,13 +195,13 @@ Route::filter('dealer-banks', function($route, $request)
 	$action = $route->getAction();
 	$action = $action['controller'];
 	$access = false;
-    if (str_contains($action, 'index') || str_contains($action, 'search')) {
-    	if (Entrust::can('view_dealer_link_bank')) $access = true;
-    } else if (str_contains($action, 'create') || str_contains($action, 'store')) {
-    	if (Entrust::can('add_dealer_link_bank')) $access = true;
-    } else if (str_contains($action, 'edit') || str_contains($action, 'update')) {
-    	if (Entrust::can('edit_dealer_link_bank')) $access = true;
-    } /*else if (str_contains($action, 'destroy')) {
+	if (str_contains($action, 'index') || str_contains($action, 'search')) {
+		if (Entrust::can('view_dealer_link_bank')) $access = true;
+	} else if (str_contains($action, 'create') || str_contains($action, 'store')) {
+		if (Entrust::can('add_dealer_link_bank')) $access = true;
+	} else if (str_contains($action, 'edit') || str_contains($action, 'update')) {
+		if (Entrust::can('edit_dealer_link_bank')) $access = true;
+	} /*else if (str_contains($action, 'destroy')) {
     	if (Entrust::can('delete_dealer_link_terminal')) $access = true;
     }*/
 
@@ -204,15 +216,15 @@ Route::filter('terminals', function($route, $request)
 	$action = $route->getAction();
 	$action = $action['controller'];
 	$access = false;
-    if (str_contains($action, 'index') || str_contains($action, 'search')) {
-    	if (Entrust::can('view_terminal')) $access = true;
-    } else if (str_contains($action, 'create') || str_contains($action, 'store')) {
-    	if (Entrust::can('add_terminal')) $access = true;
-    } else if (str_contains($action, 'edit') || str_contains($action, 'update')) {
-    	if (Entrust::can('edit_terminal')) $access = true;
-    } else if (str_contains($action, 'destroy')) {
-    	if (Entrust::can('delete_terminal')) $access = true;
-    }
+	if (str_contains($action, 'index') || str_contains($action, 'search')) {
+		if (Entrust::can('view_terminal')) $access = true;
+	} else if (str_contains($action, 'create') || str_contains($action, 'store')) {
+		if (Entrust::can('add_terminal')) $access = true;
+	} else if (str_contains($action, 'edit') || str_contains($action, 'update')) {
+		if (Entrust::can('edit_terminal')) $access = true;
+	} else if (str_contains($action, 'destroy')) {
+		if (Entrust::can('delete_terminal')) $access = true;
+	}
 
 	if (!$access) {
 		return Redirect::to('/permission-deny')->with('flash_notice_error', Config::get('globle.deny'));
@@ -224,11 +236,11 @@ Route::filter('currency-conversion-rules', function($route, $request)
 	$action = $route->getAction();
 	$action = $action['controller'];
 	$access = false;
-    if (str_contains($action, 'index') || str_contains($action, 'search')) {
-    	if (Entrust::can('view_currency_conversion_rule')) $access = true;
-    } else if (str_contains($action, 'edit') || str_contains($action, 'update')) {
-    	if (Entrust::can('edit_currency_conversion_rule')) $access = true;
-    }
+	if (str_contains($action, 'index') || str_contains($action, 'search')) {
+		if (Entrust::can('view_currency_conversion_rule')) $access = true;
+	} else if (str_contains($action, 'edit') || str_contains($action, 'update')) {
+		if (Entrust::can('edit_currency_conversion_rule')) $access = true;
+	}
 
 	if (!$access) {
 		return Redirect::to('/permission-deny')->with('flash_notice_error', Config::get('globle.deny'));
@@ -240,26 +252,26 @@ Route::filter('sales', function($route, $request)
 	$action = $route->getAction();
 	$action = $action['controller'];
 	$access = false;
-    if (str_contains($action, 'index') || str_contains($action, 'search') || str_contains($action, 'show')) {
-    	if (Entrust::can('view_sale_staff')) $access = true;
-    } else if (str_contains($action, 'create') || str_contains($action, 'store')) {
-    	if (Entrust::can('add_sale_staff')) $access = true;
-    } else if (str_contains($action, 'edit') || str_contains($action, 'update')) {
-    	if (Entrust::can('edit_sale_staff')) $access = true;
-    } else if (str_contains($action, 'destroy')) {
-    	if (Entrust::can('delete_sale_staff')) $access = true;
-    } else if (str_contains($action, 'target')) {
-    	if (Entrust::can('view_dragon_warrior_target')) $access = true;
-    } else if (str_contains($action, 'createTarget') || str_contains($action, 'storeTarget')) {
-    	if (Entrust::can('add_dragon_warrior_target')) $access = true;
-    } else if (str_contains($action, 'editTarget') || str_contains($action, 'updateTarget')) {
-    	if (Entrust::can('edit_dragon_warrior_target')) $access = true;
-    }else if (str_contains($action, 'uploadSaleTarget') || str_contains($action, 'storeTarget')) {
+	if (str_contains($action, 'index') || str_contains($action, 'search') || str_contains($action, 'show')) {
+		if (Entrust::can('view_sale_staff')) $access = true;
+	} else if (str_contains($action, 'create') || str_contains($action, 'store')) {
+		if (Entrust::can('add_sale_staff')) $access = true;
+	} else if (str_contains($action, 'edit') || str_contains($action, 'update')) {
+		if (Entrust::can('edit_sale_staff')) $access = true;
+	} else if (str_contains($action, 'destroy')) {
+		if (Entrust::can('delete_sale_staff')) $access = true;
+	} else if (str_contains($action, 'target')) {
+		if (Entrust::can('view_dragon_warrior_target')) $access = true;
+	} else if (str_contains($action, 'createTarget') || str_contains($action, 'storeTarget')) {
+		if (Entrust::can('add_dragon_warrior_target')) $access = true;
+	} else if (str_contains($action, 'editTarget') || str_contains($action, 'updateTarget')) {
+		if (Entrust::can('edit_dragon_warrior_target')) $access = true;
+	}else if (str_contains($action, 'uploadSaleTarget') || str_contains($action, 'storeTarget')) {
 		if (Entrust::can('upload_dragon_warrior_target')) $access = true;
 	}
-	
-	
-	
+
+
+
 	if (!$access) {
 		return Redirect::to('/permission-deny')->with('flash_notice_error', Config::get('globle.deny'));
 	}
@@ -270,15 +282,15 @@ Route::filter('customer-calls', function($route, $request)
 	$action = $route->getAction();
 	$action = $action['controller'];
 	$access = false;
-    /*if (str_contains($action, 'index') || str_contains($action, 'search')) {
-    	if (Entrust::can('view_sale_staff')) $access = true;
-    } else if (str_contains($action, 'create') || str_contains($action, 'store')) {
-    	if (Entrust::can('add_sale_staff')) $access = true;
-    } else if (str_contains($action, 'edit') || str_contains($action, 'update')) {
-    	if (Entrust::can('edit_sale_staff')) $access = true;
-    } else if (str_contains($action, 'destroy')) {
-    	if (Entrust::can('delete_sale_staff')) $access = true;
-    }*/
+	/*if (str_contains($action, 'index') || str_contains($action, 'search')) {
+		if (Entrust::can('view_sale_staff')) $access = true;
+	} else if (str_contains($action, 'create') || str_contains($action, 'store')) {
+		if (Entrust::can('add_sale_staff')) $access = true;
+	} else if (str_contains($action, 'edit') || str_contains($action, 'update')) {
+		if (Entrust::can('edit_sale_staff')) $access = true;
+	} else if (str_contains($action, 'destroy')) {
+		if (Entrust::can('delete_sale_staff')) $access = true;
+	}*/
 
 	if (!$access) {
 		return Redirect::to('/permission-deny')->with('flash_notice_error', Config::get('globle.deny'));
@@ -290,15 +302,15 @@ Route::filter('tickits', function($route, $request)
 	$action = $route->getAction();
 	$action = $action['controller'];
 	$access = false;
-    /*if (str_contains($action, 'index') || str_contains($action, 'search')) {
-    	if (Entrust::can('view_sale_staff')) $access = true;
-    } else if (str_contains($action, 'create') || str_contains($action, 'store')) {
-    	if (Entrust::can('add_sale_staff')) $access = true;
-    } else if (str_contains($action, 'edit') || str_contains($action, 'update')) {
-    	if (Entrust::can('edit_sale_staff')) $access = true;
-    } else if (str_contains($action, 'destroy')) {
-    	if (Entrust::can('delete_sale_staff')) $access = true;
-    }*/
+	/*if (str_contains($action, 'index') || str_contains($action, 'search')) {
+		if (Entrust::can('view_sale_staff')) $access = true;
+	} else if (str_contains($action, 'create') || str_contains($action, 'store')) {
+		if (Entrust::can('add_sale_staff')) $access = true;
+	} else if (str_contains($action, 'edit') || str_contains($action, 'update')) {
+		if (Entrust::can('edit_sale_staff')) $access = true;
+	} else if (str_contains($action, 'destroy')) {
+		if (Entrust::can('delete_sale_staff')) $access = true;
+	}*/
 
 	if (!$access) {
 		return Redirect::to('/permission-deny')->with('flash_notice_error', Config::get('globle.deny'));
@@ -310,9 +322,9 @@ Route::filter('sys-audits', function($route, $request)
 	$action = $route->getAction();
 	$action = $action['controller'];
 	$access = false;
-    if (str_contains($action, 'index') || str_contains($action, 'search')) {
-    	if (Entrust::can('view_sys_audittrail')) $access = true;
-    }
+	if (str_contains($action, 'index') || str_contains($action, 'search')) {
+		if (Entrust::can('view_sys_audittrail')) $access = true;
+	}
 	if (!$access) {
 		return Redirect::to('/permission-deny')->with('flash_notice_error', Config::get('globle.deny'));
 	}
@@ -323,17 +335,17 @@ Route::filter('reports', function($route, $request)
 	$action = $route->getAction();
 	$action = $action['controller'];
 	$access = false;
-    if (str_contains($action, 'saleVisit')) {
-    	if (Entrust::can('view_sale_visit_report')) $access = true;
-    } else if (str_contains($action, 'dealerSummaryBalanceReport')) {
-    	if (Entrust::can('view_dealer_summary_balance_report')) $access = true;
-    } else if (str_contains($action, 'transactionReport')) {
-    	if (Entrust::can('transaction-report')) $access = true;
+	if (str_contains($action, 'saleVisit')) {
+		if (Entrust::can('view_sale_visit_report')) $access = true;
+	} else if (str_contains($action, 'dealerSummaryBalanceReport')) {
+		if (Entrust::can('view_dealer_summary_balance_report')) $access = true;
+	} else if (str_contains($action, 'transactionReport')) {
+		if (Entrust::can('transaction-report')) $access = true;
 	}else if (str_contains($action, 'bankReport')) {
-    	if (Entrust::can('view_bank_report')) $access = true;
-    }else if (str_contains($action, 'masterSubdealerReport')) {
-	    if (Entrust::can('transaction_master_subdealer_report')) $access = true;
-    }else if (str_contains($action, 'summaryPinCodeStock')) {
+		if (Entrust::can('view_bank_report')) $access = true;
+	}else if (str_contains($action, 'masterSubdealerReport')) {
+		if (Entrust::can('transaction_master_subdealer_report')) $access = true;
+	}else if (str_contains($action, 'summaryPinCodeStock')) {
 		if (Entrust::can('summary_pin_code_stock')) $access = true;
 	}
 
@@ -347,8 +359,8 @@ Route::filter('pin-stocks', function($route, $request)
 	$action = $route->getAction();
 	$action = $action['controller'];
 	$access = false;
-    
-    if (str_contains($action, 'summaryPinCodeStock')) {
+
+	if (str_contains($action, 'summaryPinCodeStock')) {
 		if (Entrust::can('summary_pin_code_stock')) $access = true;
 	} else if (str_contains($action, 'viewPinStock')) {
 		if (Entrust::can('view_pin_stock')) $access = true;
@@ -367,27 +379,27 @@ Route::filter('finances', function($route, $request)
 	$action = $route->getAction();
 	$action = $action['controller'];
 	$access = false;
-    if (str_contains($action, 'deposit') || str_contains($action, 'storeDeposit')) {
-    	if (Entrust::can('deposit')) $access = true;
-    } else if (str_contains($action, 'promotion') || str_contains($action, 'storePromotion')) {
-    	if (Entrust::can('promotion')) $access = true;
-    } else if (str_contains($action, 'commissionFree') || str_contains($action, 'storeCommissionFree')) {
-    	if (Entrust::can('commission_free')) $access = true;
-    } else if (str_contains($action, 'masterDepositToSubDealer') || str_contains($action, 'storeMasterDepositToSubDealer')) {
-    	if (Entrust::can('master-deposit-tosub-dealer')) $access = true;
-    } else if (str_contains($action, 'masterWithdrawFromSubDealer') || str_contains($action, 'storeMasterWithdrawFromSubDealer')) {
-    	if (Entrust::can('master-withdraw-fromsub-dealer')) $access = true;
-    } else if (str_contains($action, 'dealerRefund') || str_contains($action, 'storeDealerRefund')) {
-    	if (Entrust::can('dealer_refund')) $access = true;
+	if (str_contains($action, 'deposit') || str_contains($action, 'storeDeposit')) {
+		if (Entrust::can('deposit')) $access = true;
+	} else if (str_contains($action, 'promotion') || str_contains($action, 'storePromotion')) {
+		if (Entrust::can('promotion')) $access = true;
+	} else if (str_contains($action, 'commissionFree') || str_contains($action, 'storeCommissionFree')) {
+		if (Entrust::can('commission_free')) $access = true;
+	} else if (str_contains($action, 'masterDepositToSubDealer') || str_contains($action, 'storeMasterDepositToSubDealer')) {
+		if (Entrust::can('master-deposit-tosub-dealer')) $access = true;
+	} else if (str_contains($action, 'masterWithdrawFromSubDealer') || str_contains($action, 'storeMasterWithdrawFromSubDealer')) {
+		if (Entrust::can('master-withdraw-fromsub-dealer')) $access = true;
+	} else if (str_contains($action, 'dealerRefund') || str_contains($action, 'storeDealerRefund')) {
+		if (Entrust::can('dealer_refund')) $access = true;
 	} else if (str_contains($action, 'dealerPayback') || str_contains($action, 'storeDealerPayback')) {
-    	if (Entrust::can('dealer_payback')) $access = true;
+		if (Entrust::can('dealer_payback')) $access = true;
 	} else if (str_contains($action, 'getDealerBankAccountNames') || str_contains($action, 'getDealerBankAccountNumber')
 		|| str_contains($action, 'getDealerWalletByCondition')) {
-    	$access = true;
+		$access = true;
 	}
-	
-	
-	
+
+
+
 	if (!$access) {
 		return Redirect::to('/permission-deny')->with('flash_notice_error', Config::get('globle.deny'));
 	}

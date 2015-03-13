@@ -4,7 +4,7 @@ class OhadminController extends \BaseController {
 	/*
 	 * The layout that should be used for responses.
 	 */
-	protected $layout = 'layouts.backend';
+	protected $layout = 'layouts.login';
 	
 	/**
 	 * Login Backend page
@@ -12,14 +12,6 @@ class OhadminController extends \BaseController {
 	public function login()
 	{
 		$this->layout->content = View::make('ohadmin.login');
-	}
-
-	/**
-	 * Backend page
-	 */
-	public function backend()
-	{
-		$this->layout->content = View::make('ohadmin.dashboard',compact(''));
 	}
 
 	/*
