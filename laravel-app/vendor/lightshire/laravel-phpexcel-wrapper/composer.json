@@ -1,0 +1,28 @@
+{
+  "name": "lightshire/laravel-phpexcel-wrapper",
+  "description": "PHPOffice PHPExcel wrapper",
+  "keywords": [
+    "laravel",
+    "excel",
+    "phpexcel",
+    "xls",
+    "xlsx"
+  ],
+  "authors": [
+    {
+      "name": "lightshire",
+      "email": "giansantillan18@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0",
+    "illuminate/support": "4.x",
+    "phpoffice/phpexcel": "1.8.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "Lightshire\\PHPExcel\\": "src/"
+    }
+  },
+  "minimum-stability": "dev"
+}
