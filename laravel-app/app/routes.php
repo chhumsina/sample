@@ -17,10 +17,6 @@
  });*/
 
 Route::get('backend', array('before' => 'guest', function() {
-	//return Hash::make('automatereport^@$$(ASDF/3#)*AS#');
-	//return Hash::make('admin@#$%loto');
-	//return Hash::make('@password@');
-	//return Hash::make('@khengleng@#$%');
 
 	return View::make('/');
 }));
@@ -48,30 +44,11 @@ Route::get('logout', array('before' => 'auth', function() {
 Route::group(array('before' => 'auth'), function() {
 	Route::get('backend', 'BackendController@dashboard');
 
-	Route::get('lucky/print-ticket', 'LuckyController@printTicket');
-	Route::post('lucky/print-ticket', 'LuckyController@printStoreTicket');
-	Route::get('lucky/cancel-ticket', 'LuckyController@cancelTicket');
-	Route::post('lucky/cancel-ticket', 'LuckyController@cancelStoreTicket');
-	Route::get('lucky/payout', 'LuckyController@payout');
-	Route::post('lucky/payout', 'LuckyController@showPayout');
-	Route::get('lucky/result', 'LuckyController@result');
-	Route::post('lucky/result', 'LuckyController@showResult');
-	Route::get('lucky/show-report', 'LuckyController@showReport');
-	Route::post('lucky/show-report', 'LuckyController@showReport');
+	Route::get('backend/member', 'MemberController@lists');
+	Route::get('backend/member', 'MemberController@lists');
 
-	Route::resource('lucky', 'LuckyController');
-	Route::when('lucky*', 'lucky');
-
-
-	Route::get('ticket/print-ticket', 'TicketController@printTicket');
-	Route::post('ticket/print-ticket', 'TicketController@printStoreTicket');
-	Route::get('ticket/cancel-ticket', 'TicketController@cancelTicket');
-	Route::post('ticket/cancel-ticket', 'TicketController@cancelStoreTicket');
-	Route::get('ticket/payout', 'TicketController@payout');
-	Route::post('ticket/payout', 'TicketController@showPayout');
-
-	Route::resource('ticket', 'TicketController');
-	Route::when('ticket*', 'ticket');
+	Route::resource('member', 'MemberController');
+	Route::when('member*', 'member');
 
 });
 Route::controller('sys-automates', 'SysAutomateReportController');

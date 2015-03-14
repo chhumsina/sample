@@ -12,7 +12,7 @@ class HomeController extends \BaseController {
 	public function welcome()
 	{
 		$test = Member::all();
-		$this->layout->content = View::make('home.show',compact('test'));
+		$this->layout->content = View::make('home.show');
 	}
 
 	/*

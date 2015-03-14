@@ -12,5 +12,6 @@
 	{{HTML::style('assets/css/sb-admin.css')}}
 	{{HTML::style('assets/css/morris.css')}}
 	{{HTML::style('assets/css/font-awesome.min.css')}}
+	{{HTML::style('assets/css/backend.css')}}
 
 </head>

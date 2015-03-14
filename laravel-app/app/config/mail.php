@@ -55,7 +55,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'info@luckydragonlotto.com', 'name' => 'System Automater Report'),
+	'from' => array('address' => '', 'name' => ''),
 	//'from' => array('address' => 'chumneang.luncist@gmail.com', 'name' => 'System Automater Report'),
 
 	/*

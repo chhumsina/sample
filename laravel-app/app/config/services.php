@@ -15,12 +15,12 @@ return array(
 	*/
 
 	'mailgun' => array(
-		'domain' => 'chumneang.luncist@gmail.com',
-		'secret' => '13Cambodia@13',
+		'domain' => '',
+		'secret' => '',
 	),
 
 	'mandrill' => array(
-		'secret' => '13Cambodia@13',
+		'secret' => 'Cambodia@',
 	),
 
 	'stripe' => array(
