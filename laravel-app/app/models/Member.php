@@ -13,7 +13,8 @@ class Member extends Eloquent implements UserInterface, RemindableInterface {
 	 *
 	 * @var string
 	 */
-	protected $table = 'member'; //users
+	protected $table = 'member';
+	protected $fillable = ['username','email','password','first_name','last_name','location','phone','address','photo','status','use_type'];
 
 	/**
 	 * The attributes excluded from the model's JSON form.

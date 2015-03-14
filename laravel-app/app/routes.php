@@ -45,7 +45,7 @@ Route::group(array('before' => 'auth'), function() {
 	Route::get('backend', 'BackendController@dashboard');
 
 	Route::get('backend/member', 'MemberController@lists');
-	Route::get('backend/member', 'MemberController@lists');
+	Route::post('backend/member', 'MemberController@search');
 
 	Route::resource('member', 'MemberController');
 	Route::when('member*', 'member');

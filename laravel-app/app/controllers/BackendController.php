@@ -22,15 +22,19 @@ class BackendController extends \BaseController {
 		$posts = $postActive + $postInactive;
 
 		// category record
-		$cateActiveQuery = "select * from category where status = 1";
-		$cateInactiveQuery = "select * from category where status = 0";
-		$cateActive = DB::select(DB::raw($cateActiveQuery));
-		$cateInactive = DB::select(DB::raw($cateInactiveQuery));
-		$categories = $cateActive + $cateInactive;
+		$catActive = Post::where('status','1')->count();
+		$catInactive = Post::where('status','0')->count();
+		$categories = $catActive + $catInactive;
+
+		// advertisement record
+		$advActive = Post::where('status','1')->count();
+		$advInactive = Post::where('status','0')->count();
+		$advertisements = $advActive + $advInactive;
 
 
 		$this->layout->content = View::make('backend.dashboard',compact('members','memActive','memInactive',
 																		'posts','postActive','postInactive',
-																		'categories','cateActive','cateInactive'));
+																		'categories','catActive','catInactive',
+																		'advertisements','advActive','advInactive'));
 	}
 }

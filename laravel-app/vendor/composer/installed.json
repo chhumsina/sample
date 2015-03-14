@@ -2652,5 +2652,103 @@
             "qr code",
             "qrcode"
         ]
+    },
+    {
+        "name": "ollieread/multiauth",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ollieread/multiauth.git",
+            "reference": "841b85cd7852a95b254f0244c0d0644df5eaf934"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ollieread/multiauth/zipball/841b85cd7852a95b254f0244c0d0644df5eaf934",
+            "reference": "841b85cd7852a95b254f0244c0d0644df5eaf934",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/auth": "~4.1",
+            "illuminate/console": "~4.1",
+            "illuminate/database": "~4.1",
+            "illuminate/filesystem": "~4.1",
+            "illuminate/support": "~4.1",
+            "php": ">=5.3.0"
+        },
+        "time": "2014-12-08 14:56:41",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Ollieread\\Multiauth": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Ollie Read",
+                "email": "labs@ollieread.com"
+            }
+        ],
+        "description": "Multiple auth driver for Laravel",
+        "keywords": [
+            "auth",
+            "laravel",
+            "multi"
+        ]
+    },
+    {
+        "name": "fzaninotto/faker",
+        "version": "v1.4.0",
+        "version_normalized": "1.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/fzaninotto/Faker.git",
+            "reference": "010c7efedd88bf31141a02719f51fb44c732d5a0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/010c7efedd88bf31141a02719f51fb44c732d5a0",
+            "reference": "010c7efedd88bf31141a02719f51fb44c732d5a0",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.0",
+            "squizlabs/php_codesniffer": "~1.5"
+        },
+        "time": "2014-06-04 14:43:02",
+        "type": "library",
+        "extra": {
+            "branch-alias": []
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Faker": "src/",
+                "Faker\\PHPUnit": "test/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "François Zaninotto"
+            }
+        ],
+        "description": "Faker is a PHP library that generates fake data for you.",
+        "keywords": [
+            "data",
+            "faker",
+            "fixtures"
+        ]
     }
 ]

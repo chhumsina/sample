@@ -30,7 +30,7 @@
 						</div>
 						<div class="col-xs-9 text-right">
 							<div class="huge">{{$members}}</div>
-{{--							<div>Active:{{$posActive}} <br/>Inactive:{{$postInactive}}</div>--}}
+							<div>Active:{{$memActive}} <br/>Inactive:{{$memInactive}}</div>
 						</div>
 					</div>
 				</div>
@@ -51,8 +51,8 @@
 							<i class="fa fa-comments fa-5x"></i>
 						</div>
 						<div class="col-xs-9 text-right">
-							{{--<div class="huge">{{$posts}}</div>--}}
-							<div>Post</div>
+							<div class="huge">{{$posts}}</div>
+							<div>Active:{{$postActive}} <br/>Inactive:{{$postInactive}}</div>
 						</div>
 					</div>
 				</div>
@@ -73,8 +73,8 @@
 							<i class="fa fa-comments fa-5x"></i>
 						</div>
 						<div class="col-xs-9 text-right">
-{{--							<div class="huge">{{categories}}</div>--}}
-							<div>Category</div>
+							<div class="huge">{{$categories}}</div>
+							<div>Active:{{$catActive}} <br/>Inactive:{{$catInactive}}</div>
 						</div>
 					</div>
 				</div>
@@ -95,8 +95,8 @@
 							<i class="fa fa-comments fa-5x"></i>
 						</div>
 						<div class="col-xs-9 text-right">
-							{{--<div class="huge">{{$advertisements}}</div>--}}
-							<div>Advertisement</div>
+							<div class="huge">{{$advertisements}}</div>
+							<div>Active:{{$advActive}} <br/>Inactive:{{$advInactive}}</div>
 						</div>
 					</div>
 				</div>

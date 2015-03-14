@@ -2,146 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d017028d-ea31-42a9-9b39-781538dc5ac5" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\controllers\AnnouncementController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\controllers\CurrencyConversionRuleController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\controllers\CustomerCallController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\controllers\DashboardController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\controllers\DealerBankController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\controllers\DealerController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\controllers\DealerTerminalController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\controllers\FinanceController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\controllers\LocationController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\controllers\LuckyController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\controllers\PinStockController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\controllers\ReportController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\controllers\SaleActualController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\controllers\SaleController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\controllers\ServiceChargeController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\controllers\StockController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\controllers\SysAuditController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\controllers\SysAutomateReportController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\controllers\TerminalController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\controllers\TicketController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\controllers\TickitController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\controllers\TransactionController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\controllers\UploadActualChannelSale.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\controllers\UploadSaleTarget.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\controllers\WalletController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\1421145416426_zb_Book1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\Announcement.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\ChannelOwner.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\ChannelSale.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\ChannelSaleServiceType.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\ChannelSaleUpload.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\ClassOfServiceCharege.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\Currency.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\CurrencyConversionRule.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\CustomerCall.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\Dealer.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\DealerBank.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\DealerTerminal.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\DealerType.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\Khan.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\KhanDealerType.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\Logs.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\Province.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\RangeApprovalStaffPrivilege.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\Sale.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\SaleStaffTarget.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\SaleVisit.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\Staff.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\StockConfiguration.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\SysUpload.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\Terminal.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\Tickit.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\TxnTransactionApproval.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\TxnTransactionHeader.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\TxnTransactionItem.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\TxnUploadCancelGame.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\WWallet.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\models\WebServiceCollection.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\announcement\create_ann.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\announcement\edit_ann.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\announcement\list_ann.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\currency-conversion-rule\edit_currency_conversion_rule.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\currency-conversion-rule\list_currency_conversion_rule.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\customer-call\create_customer_call.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\dealer-bank\create_dealer_link_bank.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\dealer-bank\edit_dealer_link_bank.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\dealer-bank\list_dealer_link_bank.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\dealer-terminal\create_dealer_link_terminal.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\dealer-terminal\edit_dealer_link_terminal.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\dealer-terminal\list_dealer_link_terminal.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\dealer\create_dealer.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\dealer\edit_dealer.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\dealer\list_dealer.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\dealer\show_dealer.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\dragon-warrior-quota-graphic\dragon_warrior_quota_graphic.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\finance\commission-free.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\finance\dealer-refund.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\finance\deposit.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\finance\master-deposit-tosub-dealer.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\finance\master-withdraw-fromsub-dealer.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\finance\payback.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\finance\promotion.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\lucky\cancel-ticket.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\lucky\getPdf.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\lucky\payout.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\lucky\print-ticket.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\lucky\report.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\lucky\result.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\pin-stock\list_pin.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\pin-stock\list_summary_pin.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\pin-stock\upload_pin.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\report\bank-report.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\report\dealer_summary_balance_report.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\report\dealer_summary_balance_report_back_up_old.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\report\sale_visit.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\report\transaction-master-subdealer-report.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\report\transaction-report.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\sale-actual\create-sale-actual.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\sale-actual\edit-sale-actual.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\sale-actual\list_actual_sale.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\sale-actual\list_upload_actual_sale.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\sale-actual\upload_actual_sale.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\sale-performance\sales_performance.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\sale\create_sale.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\sale\edit_sale.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\sale\list_sale.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\sale\list_upload_sale_target.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\sale\show_sale.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\sale\upload_sale.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\sale_staff_target\create_sale_staff_target.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\sale_staff_target\edit_sale_staff_target.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\sale_staff_target\list_sale_staff_target.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\service-charge\class-of-service\list_class_of_service_charge.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\service-charge\user-profile\create-user-profile.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\service-charge\user-profile\list_user_profile.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\stock\list_stock.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\stock\list_stock_initiate.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\stock\stock_approval.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\stock\stock_initiate.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\stock\stock_initiate_detail.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\terminal\create_terminal.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\terminal\edit_terminal.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\terminal\list_terminal.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\ticket\cancel-ticket.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\ticket\payout.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\ticket\print-ticket.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\transaction\cancel_game.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\transaction\detail_transaction.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\transaction\edit_transaction.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\transaction\list_transaction.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\views\wallet\list_wallet.blade.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel-app/app/views/backend/member/edit.blade.php" />
+      <change type="DELETED" beforePath="C:\wamp\www\sample\laravel-app\app\database\migrations\2014_11_21_030435_entrust_setup_tables.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/app/controllers/BackendController.php" afterPath="$PROJECT_DIR$/laravel-app/app/controllers/BackendController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/app/models/Configuration.php" afterPath="$PROJECT_DIR$/laravel-app/app/models/Configuration.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/app/controllers/HomeController.php" afterPath="$PROJECT_DIR$/laravel-app/app/controllers/HomeController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/app/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/laravel-app/app/database/seeds/DatabaseSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/app/models/Member.php" afterPath="$PROJECT_DIR$/laravel-app/app/models/Member.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/app/controllers/MemberController.php" afterPath="$PROJECT_DIR$/laravel-app/app/controllers/MemberController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/vendor/autoload.php" afterPath="$PROJECT_DIR$/laravel-app/vendor/autoload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/laravel-app/vendor/composer/autoload_classmap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/laravel-app/vendor/composer/autoload_namespaces.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/laravel-app/vendor/composer/autoload_real.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/composer.json" afterPath="$PROJECT_DIR$/laravel-app/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/composer.lock" afterPath="$PROJECT_DIR$/laravel-app/composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/app/views/backend/dashboard.blade.php" afterPath="$PROJECT_DIR$/laravel-app/app/views/backend/dashboard.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/app/views/layouts/backendpartial/head.blade.php" afterPath="$PROJECT_DIR$/laravel-app/app/views/layouts/backendpartial/head.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/app/config/mail.php" afterPath="$PROJECT_DIR$/laravel-app/app/config/mail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/app/views/layouts/backendpartial/menu.blade.php" afterPath="$PROJECT_DIR$/laravel-app/app/views/layouts/backendpartial/menu.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/app/views/layouts/backendpartial/footer.blade.php" afterPath="$PROJECT_DIR$/laravel-app/app/views/layouts/backendpartial/footer.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/laravel-app/vendor/composer/installed.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/app/views/backend/member/list.blade.php" afterPath="$PROJECT_DIR$/laravel-app/app/views/backend/member/list.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/main.js" afterPath="$PROJECT_DIR$/assets/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/app/routes.php" afterPath="$PROJECT_DIR$/laravel-app/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/app/config/services.php" afterPath="$PROJECT_DIR$/laravel-app/app/config/services.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sample.iws" />
@@ -167,31 +45,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/laravel-app/app/routes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.8461537" vertical-offset="102" max-vertical-offset="884">
-              <caret line="27" column="18" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/laravel-app/app/controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="935">
-              <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="935">
+              <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/laravel-app/app/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="326" max-vertical-offset="884">
+              <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MemberController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/laravel-app/app/controllers/MemberController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7602862" vertical-offset="306" max-vertical-offset="1853">
+              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseSeeder.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/laravel-app/app/database/seeds/DatabaseSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="425">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/laravel-app/app/views/backend/member/list.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="530" max-vertical-offset="1292">
+              <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/laravel-app/app/views/backend/dashboard.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.51792115" vertical-offset="255" max-vertical-offset="4352">
-              <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1241" max-vertical-offset="4352">
+              <caret line="98" column="75" selection-start-line="98" selection-start-column="75" selection-end-line="98" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -216,16 +124,22 @@
         <option value="$PROJECT_DIR$/laravel-app/app/models/Advertisement.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/models/Category.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/views/layouts/backendpartial/menu.blade.php" />
-        <option value="$PROJECT_DIR$/laravel-app/app/controllers/MemberController.php" />
-        <option value="$PROJECT_DIR$/laravel-app/app/views/backend/member/list.blade.php" />
-        <option value="$PROJECT_DIR$/laravel-app/app/controllers/BackendController.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/config/database.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/config/mail.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/config/services.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/models/Configuration.php" />
-        <option value="$PROJECT_DIR$/laravel-app/app/routes.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/sample_db.sql" />
         <option value="$PROJECT_DIR$/laravel-app/app/views/backend/dashboard.blade.php" />
+        <option value="$PROJECT_DIR$/laravel-app/app/controllers/BackendController.php" />
+        <option value="$PROJECT_DIR$/laravel-app/app/routes.php" />
+        <option value="$PROJECT_DIR$/laravel-app/app/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/laravel-app/app/models/Member.php" />
+        <option value="$PROJECT_DIR$/laravel-app/app/database/seeds/MemberTableSeeder.php" />
+        <option value="$PROJECT_DIR$/laravel-app/app/views/layouts/backendpartial/footer.blade.php" />
+        <option value="$PROJECT_DIR$/assets/js/main.js" />
+        <option value="$PROJECT_DIR$/laravel-app/app/views/backend/member/list.blade.php" />
+        <option value="$PROJECT_DIR$/laravel-app/app/controllers/MemberController.php" />
       </list>
     </option>
   </component>
@@ -357,7 +271,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="home" />
+              <option name="myItemId" value="backend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -379,7 +293,69 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="member" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -389,17 +365,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="dash&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/backend/dashboard.blade.php&#10;das&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/dashboard/dashboard.blade.php&#10;home&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/HomeController.php&#10;route&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/routes.php&#10;ohadm&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/OhadminController.php&#10;filter&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/filters.php&#10;login&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/ohadmin/login.blade.php&#10;ohadmin&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="footer&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/backendpartial/footer.blade.php&#10;head&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/backendpartial/head.blade.php&#10;member&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/models/Member.php&#10;login&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/ohadmin/login.blade.php&#10;li&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/backend/member/list.blade.php&#10;list&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/email/list_dealer.blade.php&#10;backend&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/BackendController.php&#10;filter&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/filters.php&#10;dash&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/backend/dashboard.blade.php&#10;das&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/dashboard/dashboard.blade.php&#10;home&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/HomeController.php&#10;route&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/routes.php&#10;ohadm&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/OhadminController.php&#10;ohadmin&#9;null&#9;null" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../mohasambath" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp\www\sample\laravel-app\app\controllers" />
       <recent name="C:\wamp\www\sample\laravel-app\app\views\backend\member" />
-      <recent name="C:\wamp\www\sample\laravel-app\app\views" />
-      <recent name="C:\wamp\www\sample\laravel-app\app\models" />
-      <recent name="C:\wamp\www\sample\assets\css" />
+      <recent name="C:\wamp\www\sample\laravel-app\app\database\migrations" />
+      <recent name="C:\wamp\www\sample\laravel-app\app\database\seeds" />
+      <recent name="C:\wamp\www\sample" />
+      <recent name="C:\wamp\www\sample\laravel-app\app\controllers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp\www\sample\laravel-app\app\views\backend" />
@@ -456,7 +432,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25718608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26096824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -513,84 +489,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/backend/member/list.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="187">
-          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/controllers/BackendController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="155" max-vertical-offset="714">
-          <caret line="32" column="85" selection-start-line="32" selection-start-column="85" selection-end-line="32" selection-end-column="85" />
-          <folding>
-            <marker date="1426264182129" expanded="true" signature="-1:-1" placeholder="select * fro..category..." />
-            <marker date="1426264182129" expanded="true" signature="-1:-1" placeholder="select * fro..category..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/backend/dashboard.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4352">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="354" max-vertical-offset="952">
-          <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/controllers/MemberController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1360">
-          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="935">
-          <caret line="14" column="73" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/layouts/backendpartial/menu.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1856" max-vertical-offset="2448">
-          <caret line="121" column="45" selection-start-line="121" selection-start-column="45" selection-end-line="121" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/backend/member/list.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="187">
-          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/controllers/BackendController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="152" max-vertical-offset="782">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <marker date="1426264182129" expanded="true" signature="-1:-1" placeholder="select * fro..category..." />
-            <marker date="1426264182129" expanded="true" signature="-1:-1" placeholder="select * fro..category..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/laravel-app/app/models/Member.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1734">
@@ -622,24 +520,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/filters.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.846153" vertical-offset="921" max-vertical-offset="8517">
-          <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/laravel-app/app/controllers/OhadminController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.5" vertical-offset="156" max-vertical-offset="969">
           <caret line="13" column="58" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/layouts/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51792115" vertical-offset="0" max-vertical-offset="558">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -650,31 +534,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/ohadmin/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37431192" vertical-offset="0" max-vertical-offset="545">
-          <caret line="12" column="31" selection-start-line="2" selection-start-column="4" selection-end-line="12" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6238532" vertical-offset="0" max-vertical-offset="561">
-          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/laravel-app/app/views/welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.4874552" vertical-offset="272" max-vertical-offset="1122">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/layouts/backendpartial/head.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="374">
-          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -699,37 +562,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/models/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09139785" vertical-offset="0" max-vertical-offset="558">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/laravel-app/app/views/layouts/backendpartial/menu.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.730769" vertical-offset="1856" max-vertical-offset="2448">
           <caret line="121" column="45" selection-start-line="121" selection-start-column="45" selection-end-line="121" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/backend/member/list.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="187">
-          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/controllers/BackendController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="155" max-vertical-offset="714">
-          <caret line="32" column="85" selection-start-line="32" selection-start-column="85" selection-end-line="32" selection-end-column="85" />
-          <folding>
-            <marker date="1426264182129" expanded="true" signature="-1:-1" placeholder="select * fro..category..." />
-            <marker date="1426264182129" expanded="true" signature="-1:-1" placeholder="select * fro..category..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -737,7 +573,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39605734" vertical-offset="0" max-vertical-offset="901">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -745,7 +580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="584">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -753,7 +587,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.4587812" vertical-offset="3046" max-vertical-offset="3604">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -761,7 +594,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3458781" vertical-offset="751" max-vertical-offset="1309">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -769,7 +601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.827957" vertical-offset="1737" max-vertical-offset="2295">
           <caret line="75" column="12" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -777,7 +608,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3154122" vertical-offset="1703" max-vertical-offset="2261">
           <caret line="57" column="48" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -785,7 +615,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1547">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -793,7 +622,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5430108" vertical-offset="71" max-vertical-offset="629">
           <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -801,7 +629,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.4480286" vertical-offset="1924" max-vertical-offset="2482">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -809,15 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.03046595" vertical-offset="0" max-vertical-offset="558">
           <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/models/Member.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.8333334" vertical-offset="1176" max-vertical-offset="1734">
-          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -825,7 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="584">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -833,15 +650,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3763441" vertical-offset="768" max-vertical-offset="1326">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/email/list_dealer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.718638" vertical-offset="5423" max-vertical-offset="8891">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -849,7 +657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.67562723" vertical-offset="377" max-vertical-offset="935">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -857,7 +664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -865,15 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="584">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/controllers/MemberController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1360">
-          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -881,15 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.1541284" vertical-offset="629" max-vertical-offset="9333">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="935">
-          <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -897,22 +685,172 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.99816513" vertical-offset="646" max-vertical-offset="6256">
           <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample_db.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2754">
+          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel-app/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4265233" vertical-offset="0" max-vertical-offset="935">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/filters.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3726" max-vertical-offset="8517">
+          <caret line="171" column="0" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/email/list_dealer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.718638" vertical-offset="5423" max-vertical-offset="8891">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/layouts/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51792115" vertical-offset="0" max-vertical-offset="558">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3119266" vertical-offset="0" max-vertical-offset="561">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/ohadmin/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37431192" vertical-offset="0" max-vertical-offset="545">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/controllers/BackendController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8172043" vertical-offset="173" max-vertical-offset="782">
+          <caret line="37" column="105" selection-start-line="37" selection-start-column="105" selection-end-line="37" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="935">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/laravel-app/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537" vertical-offset="102" max-vertical-offset="884">
-          <caret line="27" column="18" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="326" max-vertical-offset="884">
+          <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/models/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1218638" vertical-offset="0" max-vertical-offset="558">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/sample_db.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71785027" vertical-offset="1275" max-vertical-offset="2754">
+          <caret line="97" column="91" selection-start-line="97" selection-start-column="31" selection-end-line="97" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/database/migrations/2015_03_14_163026_create_member_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70071685" vertical-offset="0" max-vertical-offset="850">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/database/seeds/MemberTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45698926" vertical-offset="0" max-vertical-offset="680">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="571">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/layouts/backendpartial/head.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4265233" vertical-offset="0" max-vertical-offset="558">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/layouts/backendpartial/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15232974" vertical-offset="0" max-vertical-offset="558">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="215" max-vertical-offset="918">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/models/Member.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43669724" vertical-offset="0" max-vertical-offset="1751">
+          <caret line="16" column="139" selection-start-line="16" selection-start-column="139" selection-end-line="16" selection-end-column="139" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="425">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/laravel-app/app/views/backend/dashboard.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51792115" vertical-offset="255" max-vertical-offset="4352">
-          <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1241" max-vertical-offset="4352">
+          <caret line="98" column="75" selection-start-line="98" selection-start-column="75" selection-end-line="98" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/backend/member/list.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="530" max-vertical-offset="1292">
+          <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/controllers/MemberController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7602862" vertical-offset="306" max-vertical-offset="1853">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>

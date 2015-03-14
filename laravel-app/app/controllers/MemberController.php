@@ -9,8 +9,37 @@ class MemberController extends \BaseController {
 	
 	public function lists()
 	{
-		$members = Member::where('use_type',2)->get();
+		$query = Member::where('use_type',2);
+		$n = 20;
+		$members = $query->paginate($n);
+
 		$this->layout->content = View::make('backend.member.list',compact('members'));
+	}
+
+	public function search()
+	{
+		$inputs = Input::all();
+		$username = $inputs['username'];
+		$email = $inputs['email'];
+		$status = $inputs['status'];
+
+		$query = Member::where('use_type', '=', '2');
+
+		// Adds a clause to the query
+		if ($username) {
+			$query->where('username', 'LIKE', "%$username%");
+		}
+		if ($email) {
+			$query->where('email', 'LIKE', "%$email%");
+		}
+		if (Input::has('status')) {
+			$query->where('status', 'LIKE', "%$status%");
+		}
+
+		$n = 2;
+		$members = $query->paginate($n)->appends($inputs);
+
+		$this->layout->content = View::make('backend.member.list', compact('members'));
 	}
 
 	/**
