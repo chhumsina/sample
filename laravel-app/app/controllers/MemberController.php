@@ -60,35 +60,50 @@ class MemberController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id)
+	public function edit($slug)
 	{
-		//
+		$member = Member::whereUsername($slug)->first();
+		$this->layout->content = View::make('backend.member.edit', compact('member'));
 	}
 
-	/**
-	 * Show the form for editing the specified resource.
-	 * GET /customercall/{id}/edit
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function edit($id)
+	public function update()
 	{
-		//
-	}
+		$inputs = Input::all();
+		$msgs = array();
+		$id = $inputs['id'];
+		if(Input::has('active'))
+		{
+			DB::statement('UPDATE member SET status=0 WHERE status=1;');
+			$msg = array('type'=>'success','msg'=>'The account is inactive now!');
+			array_push($msgs,$msg);
+			return Redirect::back()
+				->with('msgs', $msgs);
+		}elseif(Input::has('inActive')){
+			DB::statement('UPDATE member SET status=1 WHERE status=0;');
+			$msg = array('type'=>'success','msg'=>'The account is active now!');
+			array_push($msgs,$msg);
+			return Redirect::back()
+				->with('msgs', $msgs);
 
-	/**
-	 * Update the specified resource in storage.
-	 * PUT /customercall/{id}
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function update($id)
-	{
-		//
+		}elseif(Input::has('submit')){
+			$nerd = Member::find($id);
+			$nerd->email      = Input::get('email');
+			$nerd->first_name = Input::get('first_name');
+			$nerd->last_name = Input::get('last_name');
+			$nerd->location = Input::get('location');
+			$nerd->phone = Input::get('phone');
+			$nerd->address = Input::get('address');
+			$nerd->save();
+			$msg = array('type'=>'success','msg'=>'The account is update successfully');
+			array_push($msgs,$msg);
+			return Redirect::back()
+				->with('msgs', $msgs);
+		}
+		$msg = array('type'=>'error','msg'=>':)');
+		array_push($msgs,$msg);
+		return Redirect::back()
+			->with('msgs', $msgs);
 	}
-
 	/**
 	 * Remove the specified resource from storage.
 	 * DELETE /customercall/{id}

@@ -1,71 +1,69 @@
 @section('title', 'List Member')
 @section('content')
-	<?php echo Form::open(array('url' => 'backend/member', 'role' => 'form', 'class'=>'form-inline')) ?>
-		<div class="form-group">
-			<input type="text" class="form-control" id="exampleInputEmail3" placeholder="username" name="username">
+	<?php
+	$baseUrl = URL::to('/');
+	?>
+
+	<h2>Detail</h2>
+	<div class="panel">
+		<div class="panel-heading">
 		</div>
-		<div class="form-group">
-			<input type="email" class="form-control" id="" placeholder="email" name="email">
-		</div>
-		<div class="form-group">
-			<select name="status" class="form-control">
-				<option value="1">Active</option>
-				<option value="0">Inactive</option>
-			</select>
-		</div>
-		<button type="submit" class="btn btn-default">Search</button>
-	<?php echo Form::close() ?>
-
-	@if ($members->count())
-
-	<div class="row">
-		<div class="col-md-12">
-			<div class="table-responsive">
-
-
-				<table id="mytable" class="table table-bordred table-striped">
-
-					<thead>
-					<th>No</th>
-					<th>Username</th>
-					<th>Email</th>
-					<th>Phone</th>
-					<th>Location</th>
-					<th>Photo</th>
-					<th>Created Date</th>
-					<th>Action</th>
-					</thead>
-					<tbody>
-
-
-					@foreach($members as $key => $member)
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=100" class="img-circle"> </div>
+				<div class=" col-md-9 col-lg-9 ">
+					<?php echo Form::open(array('url' => 'backend/member/edit','role' => 'form', 'class'=>'form-inline')) ?>
+					<table class="table table-user-information">
+						<tbody>
 						<tr>
-							<td>{{$key+1}}</td>
-							<td>{{$member->username}}</td>
-							<td>{{$member->email}}</td>
-							<td>{{$member->phone}}</td>
-							<td>{{$member->location}}</td>
-							<td>{{$member->photo}}</td>
-							<td>{{$member->created_date}}</td>
+							<td>Status</td>
+							{{Form::hidden('id',$member->id,array('id'=>'id'))}}
+							{{Form::hidden('status',$member->status)}}
+							<td>@if($member->status)
+									<button type="submit" name="active" value="active" class="btn btn-success"><span class="fa fa-check-circle-o"></span> Active </button>
+								@else
+									<button type="submit" name="inActive"  value="inActive" class="btn btn-warning"><span class="fa fa-ban"></span> Inactive </button>
+								@endif</td>
+						</tr>
+						<tr>
+							<td>Username:</td>
+							<td>{{ Form::text('username', $member->username, array('class' => 'form-control','disabled'=>'')) }}</td>
+						</tr>
+						<tr>
+							<td>Email:</td>
+							<td>{{ Form::text('email', $member->email, array('class' => 'form-control')) }}</td>
+						</tr>
+						<tr>
+							<td>First Name:</td>
+							<td>{{ Form::text('first_name', $member->first_name, array('class' => 'form-control')) }}</td>
+						</tr>
+						<tr>
+							<td>Last Name:</td>
+							<td>{{ Form::text('last_name', $member->last_name, array('class' => 'form-control')) }}</td>
+						</tr>
+						<tr>
+							<td>Location:</td>
+							<td>{{ Form::text('location', $member->location, array('class' => 'form-control')) }}</td>
+						</tr>
+						<tr>
+							<td>Phone:</td>
+							<td>{{ Form::text('phone', $member->phone, array('class' => 'form-control')) }}</td>
+						</tr>
+						<tr>
+							<td>Address:</td>
+							<td>{{ Form::text('address', $member->address, array('class' => 'form-control')) }}</td>
+						</tr>
+						<tr>
+							<td>Created Date:</td>
 							<td>{{$member->created_date}}</td>
 						</tr>
-					@endforeach
-
-					</tbody>
-
-				</table>
-
-				<div class="clearfix"></div>
-				<span class="pagination pull-right">
-					<?php echo $members->links();?>
-				</span>
-
+						</tbody>
+					</table>
+						<a href="{{$baseUrl}}/backend/member" class="btn btn-default"><span class="fa fa-chevron-circle-left"></span> Back </a>
+						<button type="submit" class="btn btn-primary" name="submit" value="submit"><span class="fa fa-edit"></span> Submit </button>
+					<?php echo Form::close() ?>
+				</div>
 			</div>
-
 		</div>
 	</div>
-	</div>
-	@else
-			There are no record!
-	@endif
 @stop
