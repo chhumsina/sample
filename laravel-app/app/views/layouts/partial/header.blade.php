@@ -56,17 +56,28 @@
 						{{--</div>--}}
 					</div>
 				</div>
-				<div class="col-sm-8">
-					<div class="shop-menu pull-right">
-						<ul class="nav navbar-nav">
-							<li><a href="#"><i class="fa fa-user"></i> Account</a></li>
-							<li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
-							<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
-							<li><a href="{{$baseUrl}}/register"><i class="fa fa-shopping-cart"></i> Register</a></li>
-							<li><a href="login.html"><i class="fa fa-lock"></i> Login</a></li>
-						</ul>
+				@if(Auth::check())
+					<div class="col-sm-8">
+						<div class="shop-menu pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="#"><i class="fa fa-user"></i> Hi, {{Auth::user()->username}}</a></li>
+								<li><a href="{{$baseUrl}}/member/manage_ads"><i class="fa fa-crosshairs"></i> Manage Ads</a></li>
+								<li><a href="{{$baseUrl}}/logout"><i class="fa fa-shopping-cart"></i> Logot</a></li>
+								<li><a href="{{$baseUrl}}/login"><i class="fa fa-lock"></i> Help?</a></li>
+							</ul>
+						</div>
 					</div>
-				</div>
+				@else
+					<div class="col-sm-8">
+						<div class="shop-menu pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="{{$baseUrl}}/login"><i class="fa fa-lock"></i> Login</a></li>
+								<li><a href="{{$baseUrl}}/register"><i class="fa fa-shopping-cart"></i> Register</a></li>
+								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Help?</a></li>
+							</ul>
+						</div>
+					</div>
+				@endif
 			</div>
 		</div>
 	</div><!--/header-middle-->

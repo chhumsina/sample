@@ -67,14 +67,14 @@ class AccountController extends \BaseController {
 		$msgs = array();
 		if( ! $confirmation_code)
 		{
-			throw new InvalidConfirmationCodeException;
+			return Redirect::to('/');
 		}
 
 		$account = Account::whereConfirmationCode($confirmation_code)->first();
 
 		if (!$account)
 		{
-			throw new InvalidConfirmationCodeException;
+			return Redirect::to('/');
 		}
 
 		$account->status = 1;
@@ -106,7 +106,7 @@ class AccountController extends \BaseController {
 
 		if ($auth) {
 			if ($user->status == 1 && $user->use_type == 2) {
-				return Redirect::to('profile');
+				return Redirect::to('member/manage_ads');
 			} else {
 				$sms = 'This account not yet active!';
 				Auth::logout();
@@ -119,5 +119,26 @@ class AccountController extends \BaseController {
 			->withInput(Input::except('password'))
 			->with('flash_notice_error', $sms);
 	}
+
+	// Member Dashboard
+		public function manageAds()
+		{
+			$this->layout->content = View::make('account.manage-ads');
+		}
+
+		public function myProfile()
+		{
+			$this->layout->content = View::make('account.my-profile');
+		}
+
+		public function page()
+		{
+			$this->layout->content = View::make('account.page');
+		}
+
+		public function myMap()
+		{
+			$this->layout->content = View::make('account.my-map');
+		}
 
 }

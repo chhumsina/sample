@@ -50,6 +50,13 @@ Route::get('logout', array('before' => 'auth', function() {
 
 //Route::resource('announcements', 'AnnouncementController');
 Route::group(array('before' => 'auth'), function() {
+    // member
+    Route::get('member/manage_ads', 'AccountController@manageAds');
+    Route::get('member/my_profile', 'AccountController@myProfile');
+    Route::get('member/page', 'AccountController@page');
+    Route::get('member/my_map', 'AccountController@myMap');
+
+    // backend
 	Route::get('backend', 'BackendController@dashboard');
 
 	Route::get('backend/member', 'MemberController@lists');
