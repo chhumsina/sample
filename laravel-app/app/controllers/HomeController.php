@@ -46,4 +46,5 @@ class HomeController extends \BaseController {
 			->with('flash_notice_error', $sms);
 
 	}
+
 }

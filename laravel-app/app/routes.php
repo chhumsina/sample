@@ -23,16 +23,19 @@ Route::get('backend', array('before' => 'guest', function() {
 
 Route::get('/', 'HomeController@welcome');
 
-// check login
-Route::get('login', 'HomeController@login');
-Route::post('login', 'HomeController@validate');
-
 // Admin login
 Route::post('ohadmin', 'OhadminController@validate');
 
 // Member register
 Route::get('register', 'AccountController@register');
 Route::post('register', 'AccountController@store');
+Route::get('register/verify/{confirmationCode}', [
+    'as' => 'confirmation_path',
+    'uses' => 'AccountController@confirm'
+]);
+
+Route::get('login', 'AccountController@login');
+Route::post('login', 'AccountController@validate');
 
 
 Route::get('ohadmin', array('before' => 'ohadmin', function() {

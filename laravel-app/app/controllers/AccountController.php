@@ -12,6 +12,11 @@ class AccountController extends \BaseController {
 		$this->layout->content = View::make('account.register');
 	}
 
+	public function login()
+	{
+		$this->layout->content = View::make('account.login');
+	}
+
 	public function store()
 	{
 		$msgs = array();
@@ -27,13 +32,23 @@ class AccountController extends \BaseController {
 
 		if ($validator->passes())
 		{
+			$confirmation_code = str_random(30);
+
 			Account::create(array(
 				'username' => Input::get('username'),
 				'email' => Input::get('email'),
-				'password' => Hash::make(Input::get('password'))
+				'use_type' => 2,
+				'password' => Hash::make(Input::get('password')),
+				'confirmation_code' => $confirmation_code
 			));
+			$messages = array( 'code' => $confirmation_code );
 
-			$msg = array('type'=>'success','msg'=>'The account is create successfully');
+			Mail::send('email.verify', $messages, function($message) {
+				$message->to(Input::get('email'), Input::get('username'))
+					->subject('Verify your email address');
+			});
+
+			$msg = array('type'=>'success','msg'=>'Thanks for signing up! Please check your email.');
 			array_push($msgs,$msg);
 			return Redirect::back()
 				->with('msgs', $msgs);
@@ -44,6 +59,65 @@ class AccountController extends \BaseController {
 		return Redirect::back()
 			->withInput()
 			->with('msgs', $msgs);
+	}
+
+	// Confirm email
+	public function confirm($confirmation_code)
+	{
+		$msgs = array();
+		if( ! $confirmation_code)
+		{
+			throw new InvalidConfirmationCodeException;
+		}
+
+		$account = Account::whereConfirmationCode($confirmation_code)->first();
+
+		if (!$account)
+		{
+			throw new InvalidConfirmationCodeException;
+		}
+
+		$account->status = 1;
+		$account->confirmation_code = null;
+		$account->save();
+
+		$msg = array('type'=>'success','msg'=>'You have successfully verified your account.');
+		array_push($msgs,$msg);
+
+		return Redirect::to('login')
+			->withInput()
+			->with('msgs', $msgs);
+	}
+
+	// validate login
+	public function validate()
+	{
+		// attempt to do the login
+		$auth = Auth::attempt(
+			array(
+				'username'  => strtolower(Input::get('username')),
+				'password'  => Input::get('password')
+			)
+		);
+
+		$sms = 'Your username/password combination was incorrect.';
+
+		$user = Auth::user();
+
+		if ($auth) {
+			if ($user->status == 1 && $user->use_type == 2) {
+				return Redirect::to('profile');
+			} else {
+				$sms = 'This account not yet active!';
+				Auth::logout();
+			}
+
+		}
+		// validation not successful, send back to form
+
+		return Redirect::to('/')
+			->withInput(Input::except('password'))
+			->with('flash_notice_error', $sms);
 	}
 
 }
