@@ -30,6 +30,11 @@ Route::post('login', 'HomeController@validate');
 // Admin login
 Route::post('ohadmin', 'OhadminController@validate');
 
+// Member register
+Route::get('register', 'AccountController@register');
+Route::post('register', 'AccountController@store');
+
+
 Route::get('ohadmin', array('before' => 'ohadmin', function() {
 	return View::make('login');
 }));

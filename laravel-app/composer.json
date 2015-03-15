@@ -13,7 +13,8 @@
 		"maatwebsite/excel": "~1.2.1",
 	    "barryvdh/laravel-dompdf": "0.4.*",
 	 	"dinesh/barcode": "dev-master",
-	  	"ollieread/multiauth": "dev-master"
+	  	"ollieread/multiauth": "dev-master",
+		"bllim/laravel-to-jquery-validation": "~1.0"
 		
 	},
 	"autoload": {

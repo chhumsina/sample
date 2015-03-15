@@ -3,6 +3,9 @@
 <html lang="en">
 @include('layouts.partial.head')
 <body class="back">
+<?php
+$baseUrl = URL::to('/');
+?>
   	@include('layouts.partial.header')
 	<section>
 		<div class="container">

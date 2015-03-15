@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "04e7ddd0ad4121d47597665bd45bff79",
+    "hash": "6805968e6a1ec3df851381b8abe0c362",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -107,6 +107,58 @@
                 "pdf"
             ],
             "time": "2014-08-20 13:05:36"
+        },
+        {
+            "name": "bllim/laravel-to-jquery-validation",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bllim/laravel-to-jquery-validation.git",
+                "reference": "9bf0c4c1c780fa2cc03cd88c332dcb40d8c2d499"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bllim/laravel-to-jquery-validation/zipball/9bf0c4c1c780fa2cc03cd88c332dcb40d8c2d499",
+                "reference": "9bf0c4c1c780fa2cc03cd88c332dcb40d8c2d499",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/html": ">=4.2",
+                "illuminate/support": ">=4.2",
+                "illuminate/validation": ">=4.0",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations"
+                ],
+                "psr-0": {
+                    "Bllim\\LaravelToJqueryValidation\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bilal Gultekin",
+                    "email": "bilal@bilal.im"
+                }
+            ],
+            "description": "This package makes validation rules defined in laravel work client-side by converting to jquery validation rules. It uses Jquery Validation Plugin. It also allows to use laravel validation messages so you can show same messages for both sides.",
+            "keywords": [
+                "jquery",
+                "laravel",
+                "laravel to jquery validation",
+                "laravel validation",
+                "laravel validation converter",
+                "laravel validation to jquery validation",
+                "laravel4",
+                "validation"
+            ],
+            "time": "2015-02-27 08:32:36"
         },
         {
             "name": "classpreloader/classpreloader",

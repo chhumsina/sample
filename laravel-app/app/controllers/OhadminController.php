@@ -33,7 +33,7 @@ class OhadminController extends \BaseController {
 		$user = Auth::user();
 
 		if ($auth) {
-			if ($user->status == 1) {
+			if ($user->status == 1 && $user->use_type == 1) {
 				return Redirect::to('backend');
 			} else {
 				$sms = 'This account not yet active!';
