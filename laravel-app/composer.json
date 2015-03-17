@@ -14,7 +14,8 @@
 	    "barryvdh/laravel-dompdf": "0.4.*",
 	 	"dinesh/barcode": "dev-master",
 	  	"ollieread/multiauth": "dev-master",
-		"bllim/laravel-to-jquery-validation": "~1.0"
+		"bllim/laravel-to-jquery-validation": "~1.0",
+		"jildertmiedema/laravel-plupload": "0.2.*"
 		
 	},
 	"autoload": {

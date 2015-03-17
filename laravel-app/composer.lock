@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6805968e6a1ec3df851381b8abe0c362",
+    "hash": "862c103e45c17db85e1c641a6095df14",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -639,6 +639,48 @@
                 "tokenizer"
             ],
             "time": "2015-01-10 01:09:28"
+        },
+        {
+            "name": "jildertmiedema/laravel-plupload",
+            "version": "v0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jildertmiedema/laravel-plupload.git",
+                "reference": "5a6d793c8e4963b398a21d96b834ec95719be157"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jildertmiedema/laravel-plupload/zipball/5a6d793c8e4963b398a21d96b834ec95719be157",
+                "reference": "5a6d793c8e4963b398a21d96b834ec95719be157",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~4",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JildertMiedema\\LaravelPlupload": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jildert Miedema",
+                    "email": "jildertmiedema@gmail.com"
+                }
+            ],
+            "description": "Laravel 4/Plupload - Handle large file uploads",
+            "keywords": [
+                "laravel",
+                "large files",
+                "pluload"
+            ],
+            "time": "2014-07-22 12:15:06"
         },
         {
             "name": "laravel/framework",

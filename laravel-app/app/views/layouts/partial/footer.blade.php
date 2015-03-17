@@ -156,10 +156,10 @@
 
 </footer><!--/Footer-->
 
-{{HTML::script('assets/js/jquery.js')}}
+{{HTML::script('assets/js/jquery.min.js')}}
 {{HTML::script('assets/js/bootstrap.min.js')}}
 {{HTML::script('assets/js/jquery.scrollUp.min.js')}}
 {{HTML::script('assets/js/price-range.js')}}
-{{HTML::script('assets/js/jquery.prettyPhoto.js')}}
+{{HTML::script('assets/js/formValidation.js')}}
+{{HTML::script('assets/js/bootstrap.js')}}
 {{HTML::script('assets/js/main.js')}}
-{{HTML::script('assets/js/jquery.js')}}

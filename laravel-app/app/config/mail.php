@@ -29,7 +29,7 @@ return array(
 	*/
 
 	//'host' => 'smtp.mailgun.org',
-	'host' => 'smtp.luckydragonlotto.com',
+	'host' => 'smtp.gmail.com',
 	//'host' => 'smtp.gmail.com',
 	/*
 	|--------------------------------------------------------------------------
@@ -55,8 +55,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => '', 'name' => ''),
-	//'from' => array('address' => 'chumneang.luncist@gmail.com', 'name' => 'System Automater Report'),
+	'from' => ['address' => 'chhumsina@gmail.com', 'name' => 'Chhum Sina'],
 
 	/*
 	|--------------------------------------------------------------------------
@@ -82,8 +81,7 @@ return array(
 	|
 	*/
 
-	'username' => 'info@luckydragonlotto.com',
-	//'username' => 'chumneang.luncist@gmail.com',
+	'username' => 'sinachhum.cist@gmail.com',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -96,7 +94,7 @@ return array(
 	|
 	*/
 
-	'password' => '88Cambodia',
+	'password' => 'weweG689FnyT',
 
 	/*
 	|--------------------------------------------------------------------------

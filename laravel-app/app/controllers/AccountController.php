@@ -128,7 +128,8 @@ class AccountController extends \BaseController {
 
 		public function myProfile()
 		{
-			$this->layout->content = View::make('account.my-profile');
+			$locations = Location::orderBy('title','asc')->lists('title','id');
+			$this->layout->content = View::make('account.my-profile',compact('locations'));
 		}
 
 		public function page()

@@ -37,6 +37,7 @@ return array(
     'Maatwebsite\\Excel\\' => array($vendorDir . '/maatwebsite/excel/src'),
     'Lightshire\\PHPExcel\\' => array($vendorDir . '/lightshire/laravel-phpexcel-wrapper/src'),
     'LaravelBook\\Ardent' => array($vendorDir . '/laravelbook/ardent/src'),
+    'JildertMiedema\\LaravelPlupload' => array($vendorDir . '/jildertmiedema/laravel-plupload/src'),
     'Jeremeamia\\SuperClosure' => array($vendorDir . '/jeremeamia/SuperClosure/src'),
     'Illuminate' => array($vendorDir . '/laravel/framework/src'),
     'File' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),

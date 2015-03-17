@@ -2804,5 +2804,49 @@
             "laravel4",
             "validation"
         ]
+    },
+    {
+        "name": "jildertmiedema/laravel-plupload",
+        "version": "v0.2.1",
+        "version_normalized": "0.2.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/jildertmiedema/laravel-plupload.git",
+            "reference": "5a6d793c8e4963b398a21d96b834ec95719be157"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/jildertmiedema/laravel-plupload/zipball/5a6d793c8e4963b398a21d96b834ec95719be157",
+            "reference": "5a6d793c8e4963b398a21d96b834ec95719be157",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/support": "~4",
+            "php": ">=5.3.0"
+        },
+        "time": "2014-07-22 12:15:06",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "JildertMiedema\\LaravelPlupload": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jildert Miedema",
+                "email": "jildertmiedema@gmail.com"
+            }
+        ],
+        "description": "Laravel 4/Plupload - Handle large file uploads",
+        "keywords": [
+            "laravel",
+            "large files",
+            "pluload"
+        ]
     }
 ]
