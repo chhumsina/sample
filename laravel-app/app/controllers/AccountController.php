@@ -128,8 +128,67 @@ class AccountController extends \BaseController {
 
 		public function myProfile()
 		{
+			$acc = Auth::user();
 			$locations = Location::orderBy('title','asc')->lists('title','id');
-			$this->layout->content = View::make('account.my-profile',compact('locations'));
+			$this->layout->content = View::make('account.my-profile',compact('locations','acc'));
+		}
+		
+		public function update()
+		{
+			$msgs = array();
+			if(Input::has('save'))
+			{
+				$acc = Account::find(Auth::user()->id);
+				$acc->email      = Auth::user()->email;
+				$acc->first_name = Input::get('first_name');
+				$acc->last_name = Input::get('last_name');
+				$acc->location = Input::get('location');
+				$acc->phone = Input::get('phone');
+				$acc->address = Input::get('address');
+				$acc->update();
+
+				$msg = array('type'=>'success','msg'=>'My profile is update successfully');
+				array_push($msgs,$msg);
+				return Redirect::back()
+					->with('msgs', $msgs);
+			}
+		}
+
+		public function changePassword()
+		{
+			$msgs = array();
+			if (Input::has('curPassword')) {
+				$user = Auth::user();
+				if (Hash::check(Input::get('curPassword'), $user->password)) {
+					if (Input::has('newPassword') && Input::has('conPassword')) {
+						if (Input::get('newPassword') == Input::get('conPassword')) {
+							$newPassword = Hash::make(Input::get('newPassword'));
+							$user->password = $newPassword;
+							$user->save();
+
+							$msg = array('type'=>'success','msg'=>'Password changed successfully!');
+							array_push($msgs,$msg);
+							return Redirect::to('member/my_profile')->with('msgs', $msgs);
+						} else {
+							$msg = array('type'=>'error','msg'=>'Password does not match!');
+							array_push($msgs,$msg);
+						}
+					} else {
+						$msg = array('type'=>'error','msg'=>'Password could not be blank!');
+						array_push($msgs,$msg);
+					}
+				}
+				else {
+					$msg = array('type'=>'error','msg'=>'Current Password is not correct!');
+					array_push($msgs,$msg);
+				}
+			} else {
+				$msg = array('type'=>'error','msg'=>'Please input Current Password');
+				array_push($msgs,$msg);
+			}
+			return Redirect::to('member/my_profile')
+				->withInput()
+				->with('msgs', $msgs);
 		}
 
 		public function page()

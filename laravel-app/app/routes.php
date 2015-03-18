@@ -53,6 +53,8 @@ Route::group(array('before' => 'auth'), function() {
     // member
     Route::get('member/manage_ads', 'AccountController@manageAds');
     Route::get('member/my_profile', 'AccountController@myProfile');
+    Route::post('member/my_profile', 'AccountController@update');
+    Route::post('member/change_password', 'AccountController@changePassword');
     Route::get('member/page', 'AccountController@page');
     Route::get('member/my_map', 'AccountController@myMap');
 

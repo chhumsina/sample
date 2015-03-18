@@ -1,5 +1,5 @@
 <h2 class="title text-center"><?php echo str_replace('_', ' ', Request::segment(2));?></h2>
-
+@include('layouts.partial.render-message')
 <div class="tabbable-panel">
 	<div class="tabbable-line">
 		<ul class="nav nav-tabs ">

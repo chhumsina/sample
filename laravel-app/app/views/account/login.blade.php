@@ -3,29 +3,37 @@
 	<?php
 	$baseUrl = URL::to('/');
 	?>
-	<div class="col-sm-12 padding-right">
+
+	<h2 class="title text-center">Login</h2>
+	<div class="tabbable-panel">
 		<div class="features_items">
-			<h2 class="title text-center">Login</h2>
 			@include('layouts.partial.render-message')
-		<?php echo Form::open(array('url' => 'login','role' => 'form', 'class'=>'','id'=>'')) ?>
-			<div class="form-group">
-				{{ Form::label('username', 'Username:',array('class'=>'col-sm-2 col-sm-offset-2 control-label')) }}
-				<div class="col-sm-5">
-					{{ Form::text('username','', array('class' => 'form-control','id'=>'username')) }}
+		<?php echo Form::open(array('url' => 'login','role' => 'form', 'class'=>'form-horizontal','id'=>'')) ?>
+			<fieldset>
+
+				<div class="form-group">
+					{{Form::label('username', 'Username', array('class' => 'col-sm-4 control-label'))}}
+					<div class="col-sm-5">
+						{{Form::text('username','',array('placeholder'=>'Username', 'id'=>'username','class'=>'form-control'))}}
+					</div>
 				</div>
-			</div>
-			<div class="form-group">
-				{{ Form::label('password', 'Password:',array('class'=>'col-sm-2 col-sm-offset-2 control-label')) }}
-				<div class="col-sm-5">
-					{{ Form::password('password', array('class' => 'form-control','id'=>'password')) }}
+				<div class="form-group">
+					{{Form::label('password', 'Password', array('class' => 'col-sm-4 control-label'))}}
+					<div class="col-sm-5">
+						{{Form::password('password',array('placeholder'=>'Password', 'id'=>'password','class'=>'form-control'))}}
+					</div>
 				</div>
-			</div>
-			<div class="form-group">
-				<div class="col-sm-12">
-					<button type="submit" class="btn btn-primary" name="submit" value="">Submit</button>
+
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-7">
+						<div class="pull-right">
+							<button type="submit" class="btn btn-primary" name="submit" value="">Login</button>
+						</div>
+					</div>
 				</div>
-			</div>
-					<?php echo Form::close() ?>
+
+			</fieldset>
+			<?php echo Form::close() ?>
 		</div>
 
 	</div>
