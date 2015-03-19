@@ -9,7 +9,16 @@
 		<div class="col-md-7 col-md-offset-1">
 			<?php echo Form::open(array('url' => 'member/my_profile','role' => 'form', 'class'=>'form-horizontal','id'=>'')) ?>
 				<fieldset>
+					<div class="form-group">
+						{{Form::label('phone', 'Phone', array('class' => 'col-sm-2 control-label'))}}
+						<div class="col-sm-5">
 
+							<div id="image-preview" style="background-image:url('{{ URL::asset('assets/images/member/'.$acc->photo); }}');">
+								<label for="image-upload" id="image-label">Choose File</label>
+								<input type="file" name="image" id="image-upload" />
+							</div>
+						</div>
+					</div>
 					<div class="form-group">
 						<label class="col-sm-2 control-label" for="first_name">Name</label>
 						<div class="col-sm-5">
@@ -55,6 +64,7 @@
 					</div>
 
 				</fieldset>
+				<in
 			<?php echo Form::close() ?>
 				<hr/>
 				<a class="btn btn-primary" data-toggle="collapse" href="#changePassword" aria-expanded="false" aria-controls="changePassword">

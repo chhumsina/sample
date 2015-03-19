@@ -162,4 +162,5 @@
 {{HTML::script('assets/js/price-range.js')}}
 {{HTML::script('assets/js/formValidation.js')}}
 {{HTML::script('assets/js/bootstrap.js')}}
+{{HTML::script('assets/js/jquery.uploadPreview.min.js')}}
 {{HTML::script('assets/js/main.js')}}

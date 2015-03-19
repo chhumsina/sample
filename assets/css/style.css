@@ -106,3 +106,39 @@ hr {
     margin-bottom:7px;
     margin-top:14px;
 }
+
+#image-preview {
+    background-color:#FFFFFF;
+    color:#ECF0F1;
+    height:100px;
+    overflow:hidden;
+    position:relative;
+    width:100px;
+}
+#image-preview input {
+    line-height: 200px;
+    font-size: 200px;
+    position: absolute;
+    opacity: 0;
+    z-index: 10;
+}
+
+#image-preview label {
+    background-color:#BDC3C7;
+    bottom:0;
+    cursor:pointer;
+    font-size:13px;
+    height:32px;
+    left:0;
+    line-height:23px;
+    margin:auto;
+    opacity:0.3;
+    position:absolute;
+    right:0;
+    text-align:center;
+    text-transform:uppercase;
+    top:-68px;
+    width:100px;
+    padding-top: 5px;
+    z-index:5;
+}
