@@ -14,8 +14,8 @@
 						<div class="col-sm-5">
 
 							<div id="image-preview" style="background-image:url('{{ URL::asset('assets/images/member/'.$acc->photo); }}');">
-								<label for="image-upload" id="image-label">Choose File</label>
-								<input type="file" name="image" id="image-upload" />
+								<label for="image-upload" id="image-label">Choose Photo</label>
+								<input type="file" name="photo" id="image-upload" />
 							</div>
 						</div>
 					</div>

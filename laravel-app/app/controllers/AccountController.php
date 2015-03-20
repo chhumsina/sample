@@ -145,6 +145,13 @@ class AccountController extends \BaseController {
 				$acc->location = Input::get('location');
 				$acc->phone = Input::get('phone');
 				$acc->address = Input::get('address');
+				if (Input::hasFile('photo')){
+					$photo = Input::file('photo');
+					$destinationPath = public_path() . 'assets/images/member/';
+					$millisecond = round(microtime(true) * 1000);
+					$filename = $millisecond . '_' . str_random(2) . '_' . $photo->getClientOriginalName();
+					$uploadSuccess = $photo->move($destinationPath, $filename);
+				}
 				$acc->update();
 
 				$msg = array('type'=>'success','msg'=>'My profile is update successfully');
