@@ -5,16 +5,17 @@
 	?>
 	@include('layouts.partial.menumember')
 	<div class="row page">
+		<?php echo Form::open(array('url' => 'member/my_profile','role' => 'form', 'class'=>'','id'=>'','enctype'=>'multipart/form-data')) ?>
 			<div class="col-sm-12">
 				<p class="pull-right visible-xs">
 					<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
 				</p>
-				<div class="jumbotron" id="cover">
+				<div class="jumbotron" id="cover" style="background-image:url('{{ URL::asset('assets/images/member/cover/'.$acc->cover); }}');">
 					<label for="image-upload" id="image-label">Choose Cover (830 x 300)</label>
 					<input type="file" name="photo" id="image-upload" />
-					<h5 id="name">{{ucfirst(Auth::user()->username)}}</h5>
-					<p id="bio">This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
-					<img id="pagePhoto" src="{{$baseUrl}}/assets/images/member/{{Auth::user()->photo}}">
+					<h5 id="name">{{ucfirst($acc->username)}}</h5>
+					{{Form::textarea('bio',$acc->bio,['id' => 'bio','size' => '1x2','placeholder'=>'Type your bio here...'])}}
+					<img id="pagePhoto" src="{{$baseUrl}}/assets/images/member/{{$acc->photo}}">
 				</div>
 				<div class="row">
 				</div><!--/row-->
@@ -34,18 +35,16 @@
 					<div class="tab-content">
 						<div role="tabpanel" class="tab-pane active" id="product">Preview</div>
 						<div role="tabpanel" class="tab-pane" id="about">
-							<textarea id="editor1" name="editor" placeholder="Type your text here...">
-    Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </textarea>
+							<textarea id="editor1" name="about" placeholder="Type your text here...">{{$acc->about}}</textarea>
 						</div>
 						<div role="tabpanel" class="tab-pane" id="contact">...</div>
 						<div role="tabpanel" class="tab-pane" id="settings">...</div>
 					</div>
 
 				</div>
+				<button type="submit" value="savePage" name="savePage" class="btn btn-primary">Save</button>
 			</div>
+		<?php echo Form::close() ?>
 	</div>
 	@include('layouts.partial.menumemberfooter')
 @stop

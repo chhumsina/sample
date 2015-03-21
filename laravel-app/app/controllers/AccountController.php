@@ -164,6 +164,31 @@ class AccountController extends \BaseController {
 				array_push($msgs,$msg);
 				return Redirect::back()
 					->with('msgs', $msgs);
+
+			}elseif(Input::has('savePage'))
+			{
+				$acc = Account::find(Auth::user()->id);
+				$acc->about = Input::get('about');
+				$acc->bio = Input::get('bio');
+				if (Input::hasFile('photo')){
+					$destinationPath = 'assets/images/member/cover/';
+					if(File::exists($destinationPath.Auth::user()->cover)){
+						File::delete($destinationPath.Auth::user()->cover);
+					}
+					$file = Input::file('photo');
+					$millisecond = round(microtime(true) * 1000);
+					$filename = $millisecond . '_' . str_random(2) . '_' . $file->getClientOriginalName();
+					//$file->move($destinationPath, $filename);
+					Image::make($file->getRealPath())->resize('830','300')->save($destinationPath.$filename);
+					$acc->cover = $filename;
+				}
+
+				$acc->update();
+
+				$msg = array('type'=>'success','msg'=>'Page is update successfully');
+				array_push($msgs,$msg);
+				return Redirect::back()
+					->with('msgs', $msgs);
 			}
 		}
 
@@ -206,7 +231,8 @@ class AccountController extends \BaseController {
 
 		public function page()
 		{
-			$this->layout->content = View::make('account.page');
+			$acc = Auth::user();
+			$this->layout->content = View::make('account.page', compact('acc'));
 		}
 
 		public function myMap()
