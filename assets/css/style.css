@@ -5,6 +5,10 @@
     position:relative;
 }
 
+* {
+    border-radius: 0 !important;
+}
+
 /* Tabs panel */
 .tabbable-panel {
     border:1px solid #eee;
@@ -163,4 +167,53 @@ hr {
 }
 input {
     border:1px solid #DDDDDD !important;
+}
+.jumbotron {
+    font-size: 19px !important;
+    border-radius: 0 !important;
+}
+
+
+.jumbotron input {
+    font-size:14px;
+    left:380px;
+    opacity:0;
+    position:absolute;
+    top:42px;
+    width:100px;
+    z-index:10;
+}
+
+.jumbotron label {
+    background-color:#BDC3C7;
+    bottom:0;
+    cursor:pointer;
+    font-size:11px;
+    height:32px;
+    left:0;
+    line-height:23px;
+    margin:auto;
+    opacity:0.3;
+    position:absolute;
+    right:0;
+    text-align:center;
+    text-transform:uppercase;
+    top:-128px;
+    width:100px;
+    padding-top: 5px;
+    z-index:5;
+}
+
+.page .tabpanel {
+    margin-top:-28px;
+}
+.page .tab-content {
+    padding-top: 20px;
+}
+.nav-tabs, .wysiwyg-container {
+    border: 1px solid #eeeeee;
+}
+
+.wysiwyg-toolbar-top {
+    border-bottom: 1px solid #eeeeee;
 }

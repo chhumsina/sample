@@ -15,6 +15,7 @@
 	{{HTML::style('assets/css/main.css')}}
 	{{HTML::style('assets/css/responsive.css')}}
 	{{HTML::style('assets/css/formValidation.css')}}
+	{{HTML::style('assets/css/wysiwyg-editor.css')}}
 	{{HTML::style('assets/css/style.css')}}
 
 	<!--[if lt IE 9]>
