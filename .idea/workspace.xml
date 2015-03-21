@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d017028d-ea31-42a9-9b39-781538dc5ac5" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\wamp\www\sample\assets\js\wysiwyg-editor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\sample\assets\js\wysiwyg.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/app/views/layouts/partial/footer.blade.php" afterPath="$PROJECT_DIR$/laravel-app/app/views/layouts/partial/footer.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/app/views/layouts/partial/head.blade.php" afterPath="$PROJECT_DIR$/laravel-app/app/views/layouts/partial/head.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/main.js" afterPath="$PROJECT_DIR$/assets/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/app/views/account/page.blade.php" afterPath="$PROJECT_DIR$/laravel-app/app/views/account/page.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_db.sql" afterPath="$PROJECT_DIR$/sample_db.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -33,83 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AccountController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/laravel-app/app/controllers/AccountController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.9615383" vertical-offset="2301" max-vertical-offset="3774">
-              <caret line="146" column="27" selection-start-line="146" selection-start-column="27" selection-end-line="146" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.91068304" vertical-offset="3169" max-vertical-offset="3808">
-              <caret line="217" column="37" selection-start-line="217" selection-start-column="37" selection-end-line="217" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="page.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/laravel-app/app/views/account/page.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.538462" vertical-offset="207" max-vertical-offset="935">
-              <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/laravel-app/app/views/layouts/partial/footer.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.153846" vertical-offset="2379" max-vertical-offset="2958">
-              <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/wysiwyg.js-master/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.076923" vertical-offset="10199" max-vertical-offset="13022">
-              <caret line="623" column="2" selection-start-line="623" selection-start-column="2" selection-end-line="627" selection-end-column="13" />
-              <folding>
-                <element signature="n#style#0;n#pre#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="filters.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/laravel-app/app/filters.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="67" max-vertical-offset="8517">
-              <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menumember.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/laravel-app/app/views/layouts/partial/menumember.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="544">
-              <caret line="3" column="31" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2431" max-vertical-offset="8789">
-              <caret line="153" column="32" selection-start-line="153" selection-start-column="32" selection-end-line="153" selection-end-column="32" />
+            <state vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="952">
+              <caret line="12" column="79" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -118,8 +46,60 @@
       <file leaf-file-name="my-profile.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/laravel-app/app/views/account/my-profile.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.8461537" vertical-offset="85" max-vertical-offset="1989">
-              <caret line="17" column="84" selection-start-line="16" selection-start-column="32" selection-end-line="17" selection-end-column="84" />
+            <state vertical-scroll-proportion="-10.461538" vertical-offset="85" max-vertical-offset="1989">
+              <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+              <folding>
+                <element signature="e#539#626#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="master.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/laravel-app/app/views/layouts/master.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="425">
+              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/laravel-app/app/views/layouts/partial/footer.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.384615" vertical-offset="2413" max-vertical-offset="2975">
+              <caret line="167" column="43" selection-start-line="167" selection-start-column="43" selection-end-line="167" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1847" max-vertical-offset="2431">
+              <caret line="123" column="45" selection-start-line="123" selection-start-column="45" selection-end-line="123" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="3662" max-vertical-offset="4233">
+              <caret line="232" column="18" selection-start-line="232" selection-start-column="18" selection-end-line="232" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wysiwygCus.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/wysiwygCus.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.23817864" vertical-offset="493" max-vertical-offset="6290">
+              <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -133,8 +113,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/laravel-app/app/views/ohadmin/login.blade.php" />
-        <option value="$PROJECT_DIR$/laravel-app/app/filters.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/views/login.blade.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/views/layouts/backendpartial/head.blade.php" />
         <option value="$PROJECT_DIR$/assets/css/backend.css" />
@@ -170,20 +148,22 @@
         <option value="$PROJECT_DIR$/laravel-app/app/views/account/my-map.blade.php" />
         <option value="$USER_HOME$/Downloads/formvalidation-master/demo/index.html" />
         <option value="$PROJECT_DIR$/laravel-app/app/models/Location.php" />
-        <option value="$PROJECT_DIR$/laravel-app/app/views/layouts/master.blade.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/views/layouts/partial/menumember.blade.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/views/account/login.blade.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/config/mail.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/routes.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/config/packages/thapp/jitimage/config.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/config/app.php" />
-        <option value="$PROJECT_DIR$/laravel-app/app/views/account/my-profile.blade.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/controllers/AccountController.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/views/layouts/partial/head.blade.php" />
+        <option value="$PROJECT_DIR$/laravel-app/app/views/layouts/master.blade.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/views/layouts/partial/footer.blade.php" />
-        <option value="$PROJECT_DIR$/laravel-app/app/views/account/page.blade.php" />
+        <option value="$PROJECT_DIR$/assets/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/laravel-app/app/views/account/my-profile.blade.php" />
         <option value="$PROJECT_DIR$/assets/js/main.js" />
+        <option value="$PROJECT_DIR$/laravel-app/app/views/account/page.blade.php" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/assets/js/wysiwygCus.js" />
       </list>
     </option>
   </component>
@@ -220,7 +200,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -445,11 +424,12 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="foo&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/footer.blade.php&#10;head&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/head.blade.php&#10;page&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/page.blade.php&#10;style&#9;FILE&#9;file://C:/wamp/www/sample/assets/css/style.css&#10;mail&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/config/mail.php&#10;route&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/routes.php&#10;ap&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/config/app.php&#10;styl&#9;FILE&#9;file://C:/wamp/www/sample/assets/css/style.css&#10;acc&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/AccountController.php&#10;pro&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/my-profile.blade.php&#10;footer&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/footer.blade.php&#10;main&#9;FILE&#9;file://C:/wamp/www/sample/assets/js/main.js&#10;login&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/login.blade.php&#10;me&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/menumember.blade.php&#10;my&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/my-profile.blade.php&#10;member&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/MemberController.php&#10;prof&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/my-profile.blade.php&#10;hea&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/head.blade.php&#10;accc&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/AccountController.php&#10;menu&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/menu.blade.php&#10;home&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/HomeController.php&#10;ohadmin&#9;null&#9;null&#10;li&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/backend/member/list.blade.php&#10;list&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/email/list_dealer.blade.php&#10;backend&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/BackendController.php&#10;filter&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/filters.php&#10;dash&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/backend/dashboard.blade.php&#10;das&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/dashboard/dashboard.blade.php&#10;ohadm&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/OhadminController.php" />
+    <property name="SearchEverywhereHistoryKey" value="cu&#9;FILE&#9;file://C:/wamp/www/sample/assets/js/wysiwygCus.js&#10;pro&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/my-profile.blade.php&#10;style&#9;FILE&#9;file://C:/wamp/www/sample/assets/css/style.css&#10;foo&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/footer.blade.php&#10;head&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/head.blade.php&#10;page&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/page.blade.php&#10;mail&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/config/mail.php&#10;route&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/routes.php&#10;ap&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/config/app.php&#10;styl&#9;FILE&#9;file://C:/wamp/www/sample/assets/css/style.css&#10;acc&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/AccountController.php&#10;footer&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/footer.blade.php&#10;main&#9;FILE&#9;file://C:/wamp/www/sample/assets/js/main.js&#10;login&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/login.blade.php&#10;me&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/menumember.blade.php&#10;my&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/my-profile.blade.php&#10;member&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/MemberController.php&#10;prof&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/my-profile.blade.php&#10;hea&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/head.blade.php&#10;accc&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/AccountController.php&#10;menu&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/menu.blade.php&#10;home&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/HomeController.php&#10;ohadmin&#9;null&#9;null&#10;li&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/backend/member/list.blade.php&#10;list&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/email/list_dealer.blade.php&#10;backend&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/BackendController.php&#10;filter&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/filters.php&#10;dash&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/backend/dashboard.blade.php&#10;das&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/dashboard/dashboard.blade.php&#10;ohadm&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/OhadminController.php" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="recentsLimit" value="5" />
@@ -515,16 +495,16 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.61764705" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3267776" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3260212" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -532,6 +512,27 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.61764705" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3260212" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -554,10 +555,27 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/layouts/partial/render-message.blade.php">
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/layouts/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="584">
+        <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="425">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/layouts/partial/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2413" max-vertical-offset="2975">
+          <caret line="167" column="43" selection-start-line="167" selection-start-column="43" selection-end-line="167" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2227">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -687,13 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/formvalidation-master/dist/js/framework/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.899145" vertical-offset="3451" max-vertical-offset="4726">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/laravel-app/app/views/layouts/partial/header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-46.423077" vertical-offset="0" max-vertical-offset="2346">
@@ -712,13 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="572">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/formvalidation-master/demo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.3461537" vertical-offset="1246" max-vertical-offset="3553">
-          <caret line="83" column="44" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -743,18 +747,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/layouts/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="425">
-          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/laravel-app/app/views/layouts/partial/menumember.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="544">
           <caret line="3" column="31" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -776,14 +772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="136">
           <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/filters.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="67" max-vertical-offset="8517">
-          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -812,7 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="682" max-vertical-offset="1241">
           <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -820,7 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.9615383" vertical-offset="2301" max-vertical-offset="3774">
           <caret line="146" column="27" selection-start-line="146" selection-start-column="27" selection-end-line="146" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -828,31 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.576923" vertical-offset="1023" max-vertical-offset="2227">
           <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/facebook_style_profile_page/wtfdiary.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1251" max-vertical-offset="1836">
-          <caret line="87" column="25" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/facebook_style_profile_page/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5944954" vertical-offset="560" max-vertical-offset="1105">
-          <caret line="52" column="6" selection-start-line="17" selection-start-column="0" selection-end-line="52" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/account/my-profile.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537" vertical-offset="85" max-vertical-offset="1989">
-          <caret line="17" column="84" selection-start-line="16" selection-start-column="32" selection-end-line="17" selection-end-column="84" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -864,68 +825,105 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/filters.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.538462" vertical-offset="67" max-vertical-offset="8517">
+          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/wysiwyg.js-master/src/wysiwyg-editor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7915937" vertical-offset="12179" max-vertical-offset="12750">
+          <caret line="743" column="29" selection-start-line="743" selection-start-column="29" selection-end-line="743" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/laravel-app/app/views/layouts/partial/head.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51792115" vertical-offset="0" max-vertical-offset="558">
-          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.5483871" vertical-offset="0" max-vertical-offset="558">
+          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/wysiwyg.js-master/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09357798" vertical-offset="0" max-vertical-offset="8840">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/wysiwyg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2933578" vertical-offset="3434" max-vertical-offset="21845">
+          <caret line="97" column="82" selection-start-line="97" selection-start-column="81" selection-end-line="97" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18819188" vertical-offset="0" max-vertical-offset="542">
+          <caret line="6" column="70162" selection-start-line="6" selection-start-column="70162" selection-end-line="6" selection-end-column="70183" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/laravel-app/app/views/layouts/partial/footer.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.153846" vertical-offset="2379" max-vertical-offset="2958">
-          <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+        <state vertical-scroll-proportion="-16.384615" vertical-offset="2413" max-vertical-offset="2975">
+          <caret line="167" column="43" selection-start-line="167" selection-start-column="43" selection-end-line="167" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/wysiwyg.js">
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/layouts/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-35.25044" vertical-offset="20128" max-vertical-offset="21811">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/wysiwyg-editor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.62522" vertical-offset="11777" max-vertical-offset="12750">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/wysiwyg.js-master/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.076923" vertical-offset="10199" max-vertical-offset="13022">
-          <caret line="623" column="2" selection-start-line="623" selection-start-column="2" selection-end-line="627" selection-end-column="13" />
-          <folding>
-            <element signature="n#style#0;n#pre#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/account/page.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.538462" vertical-offset="207" max-vertical-offset="935">
-          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+        <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="425">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2431" max-vertical-offset="8789">
-          <caret line="153" column="32" selection-start-line="153" selection-start-column="32" selection-end-line="153" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1847" max-vertical-offset="2431">
+          <caret line="123" column="45" selection-start-line="123" selection-start-column="45" selection-end-line="123" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/account/my-profile.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.461538" vertical-offset="85" max-vertical-offset="1989">
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+          <folding>
+            <element signature="e#539#626#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/account/page.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="952">
+          <caret line="12" column="79" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.91068304" vertical-offset="3169" max-vertical-offset="3808">
-          <caret line="217" column="37" selection-start-line="217" selection-start-column="37" selection-end-line="217" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3662" max-vertical-offset="4233">
+          <caret line="232" column="18" selection-start-line="232" selection-start-column="18" selection-end-line="232" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/wysiwygCus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23817864" vertical-offset="493" max-vertical-offset="6290">
+          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
           <folding />
         </state>
       </provider>

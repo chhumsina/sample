@@ -164,5 +164,6 @@
 {{HTML::script('assets/js/bootstrap.js')}}
 {{HTML::script('assets/js/wysiwyg.js')}}
 {{HTML::script('assets/js/wysiwyg-editor.js')}}
+{{HTML::script('assets/js/wysiwygCus.js')}}
 {{HTML::script('assets/js/jquery.uploadPreview.min.js')}}
 {{HTML::script('assets/js/main.js')}}

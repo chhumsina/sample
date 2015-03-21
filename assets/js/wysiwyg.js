@@ -2,6 +2,8 @@
     'use strict';
 
     // http://stackoverflow.com/questions/97962/debounce-clicks-when-submitting-a-web-form
+
+
     var debounce = function( callback, wait, cancelprevious )
     {
         var timeout;

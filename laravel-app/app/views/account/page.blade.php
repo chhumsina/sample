@@ -9,11 +9,12 @@
 				<p class="pull-right visible-xs">
 					<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
 				</p>
-				<div class="jumbotron">
-					<label for="image-upload" id="image-label">Choose Photo</label>
+				<div class="jumbotron" id="cover">
+					<label for="image-upload" id="image-label">Choose Cover (830 x 300)</label>
 					<input type="file" name="photo" id="image-upload" />
-					<h3>{{ucfirst(Auth::user()->username)}}</h3>
-					<p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
+					<h5 id="name">{{ucfirst(Auth::user()->username)}}</h5>
+					<p id="bio">This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
+					<img id="pagePhoto" src="{{$baseUrl}}/assets/images/member/{{Auth::user()->photo}}">
 				</div>
 				<div class="row">
 				</div><!--/row-->

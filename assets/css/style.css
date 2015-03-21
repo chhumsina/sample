@@ -171,8 +171,9 @@ input {
 .jumbotron {
     font-size: 19px !important;
     border-radius: 0 !important;
+    position: relative;
+    height: 300px;
 }
-
 
 .jumbotron input {
     font-size:14px;
@@ -216,4 +217,27 @@ input {
 
 .wysiwyg-toolbar-top {
     border-bottom: 1px solid #eeeeee;
+}
+
+#pagePhoto {
+    border: 3px solid #ffffff;
+    height: 100px;
+    left: 48px;
+    position: absolute;
+    top: 160px;
+    width: 100px;
+}
+
+#cover #name {
+    margin-left: -11px;
+    margin-top: 93px;
+    text-shadow: 1px 1px 4px #ffffff;
+}
+#cover #bio {
+    font-family: arial;
+    font-size: 14px;
+    font-weight: lighter;
+    margin-left: 98px;
+    margin-top: 66px;
+    text-shadow: 1px 1px 4px #ffffff;
 }
