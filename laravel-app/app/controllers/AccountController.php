@@ -146,12 +146,18 @@ class AccountController extends \BaseController {
 				$acc->phone = Input::get('phone');
 				$acc->address = Input::get('address');
 				if (Input::hasFile('photo')){
-					$photo = Input::file('photo');
-					$destinationPath = public_path() . 'assets/images/member/';
+					$destinationPath = 'assets/images/member/';
+					if(File::exists($destinationPath.Auth::user()->photo)){
+						File::delete($destinationPath.Auth::user()->photo);
+					}
+					$file = Input::file('photo');
 					$millisecond = round(microtime(true) * 1000);
-					$filename = $millisecond . '_' . str_random(2) . '_' . $photo->getClientOriginalName();
-					$uploadSuccess = $photo->move($destinationPath, $filename);
+					$filename = $millisecond . '_' . str_random(2) . '_' . $file->getClientOriginalName();
+					//$file->move($destinationPath, $filename);
+					Image::make($file->getRealPath())->resize('100','100')->save($destinationPath.$filename);
+					$acc->photo = $filename;
 				}
+
 				$acc->update();
 
 				$msg = array('type'=>'success','msg'=>'My profile is update successfully');

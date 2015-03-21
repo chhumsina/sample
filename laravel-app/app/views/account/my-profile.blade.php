@@ -7,7 +7,7 @@
 	<br/>
 	<div class="row">
 		<div class="col-md-7 col-md-offset-1">
-			<?php echo Form::open(array('url' => 'member/my_profile','role' => 'form', 'class'=>'form-horizontal','id'=>'')) ?>
+			<?php echo Form::open(array('url' => 'member/my_profile','role' => 'form', 'class'=>'form-horizontal','id'=>'','enctype'=>'multipart/form-data')) ?>
 				<fieldset>
 					<div class="form-group">
 						{{Form::label('phone', 'Phone', array('class' => 'col-sm-2 control-label'))}}

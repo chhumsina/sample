@@ -128,7 +128,8 @@ return array(
 		'Lightshire\PHPExcel\ServiceProvider',
 		'Maatwebsite\Excel\ExcelServiceProvider',
 		'Barryvdh\DomPDF\ServiceProvider',
-		'Dinesh\Barcode\BarcodeServiceProvider'
+		'Dinesh\Barcode\BarcodeServiceProvider',
+		'Intervention\Image\ImageServiceProvider'
 	),
 
 	/*
@@ -201,6 +202,7 @@ return array(
 		'PDF' 				=> 'Barryvdh\DomPDF\Facade',
 		'DNS1D' => 'Dinesh\Barcode\Facades\DNS1DFacade',
 		'DNS2D' => 'Dinesh\Barcode\Facades\DNS2DFacade',
+		'Image' => 'Intervention\Image\Facades\Image'
 	),
 
 );
