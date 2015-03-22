@@ -2,7 +2,7 @@
 
 class Account extends \Eloquent {
 	protected $table = 'member';
-	protected $fillable = array('username','email','password','first_name','last_name','location','phone','address','photo','status','use_type','confirmation_code');
+	protected $fillable = array('username','email','password','password_temp','first_name','last_name','location','phone','address','photo','cover','bio','status','about','use_type','confirmation_code');
 	public static $rules = array(
 		'username' => 'required',
 		'email' => 'required',

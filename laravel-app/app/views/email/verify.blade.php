@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 </head>
 <body>
-<h2>Verify Your Email Address</h2>
+<h2>Recovery Password</h2>
 
 <div>
 	Thanks for creating an account with the verification demo app.

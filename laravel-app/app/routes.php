@@ -37,6 +37,13 @@ Route::get('register/verify/{confirmationCode}', [
 Route::get('login', 'AccountController@login');
 Route::post('login', 'AccountController@validate');
 
+Route::get('forget_password', 'AccountController@forgetPassword');
+Route::post('forget_password', 'AccountController@validateForgetPassword');
+Route::get('recovery/password/{confirmationCode}', [
+    'as' => 'confirmation_path',
+    'uses' => 'AccountController@forgetPasswordConfirm'
+]);
+
 
 Route::get('ohadmin', array('before' => 'ohadmin', function() {
 	return View::make('login');

@@ -17,6 +17,11 @@ class AccountController extends \BaseController {
 		$this->layout->content = View::make('account.login');
 	}
 
+	public function forgetPassword()
+	{
+		$this->layout->content = View::make('account.forget_password');
+	}
+
 	public function store()
 	{
 		$msgs = array();
@@ -89,6 +94,33 @@ class AccountController extends \BaseController {
 			->with('msgs', $msgs);
 	}
 
+	// forget password confirmation
+	public function forgetPasswordConfirm($code) {
+		$msgs = array();
+		$acc = Account::where('confirmation_code','=', $code)->where('password_temp','!=','');
+
+		if($acc->count()) {
+			$acc = $acc->first();
+			$acc->password = $acc->password_temp;
+			$acc->password_temp = '';
+			$acc->confirmation_code = '';
+			if($acc->save()) {
+				$msg = array('type'=>'success','msg'=>'Your account is recoveried now, please login with your New password!.');
+				array_push($msgs,$msg);
+
+				return Redirect::to('login')
+					->withInput()
+					->with('msgs', $msgs);
+			}
+		}
+
+		$msg = array('type'=>'success','msg'=>'Your account could not recovery!');
+		array_push($msgs,$msg);
+
+		return Redirect::to('login')
+			->withInput()
+			->with('msgs', $msgs);
+	}
 	// validate login
 	public function validate()
 	{
@@ -189,6 +221,58 @@ class AccountController extends \BaseController {
 				array_push($msgs,$msg);
 				return Redirect::back()
 					->with('msgs', $msgs);
+			}
+		}
+
+		public function validateForgetPassword()
+		{
+			$msgs = array();
+			$inputs = Input::all();
+			$email = $inputs['email'];
+
+			if(Input::has('submit'))
+			{
+
+				if(empty($email)){
+					$msg = array('type'=>'error','msg'=>'Please entry the Email!');
+					array_push($msgs,$msg);
+					return Redirect::back()
+						->withInput()
+						->with('msgs', $msgs);
+				}
+
+				$acc = Account::where('email','=', $email);
+				if($acc->count()) {
+					$acc = $acc->first();
+
+					$code = str_random(60);
+					$password = str_random(10);
+
+					$acc->confirmation_code = $code;
+					$acc->password_temp = Hash::make($password);
+
+					$messages = array( 'code' => $code, 'password'=> $password);
+					if($acc->save()) {
+						Mail::send('email.forget-password', $messages, function($message) {
+							$message->to(Input::get('email'), Input::get('email'))
+								->subject('Recovery Password!');
+						});
+
+						$msg = array('type'=>'success','msg'=>'Password click the recovery link vai your email.');
+						array_push($msgs,$msg);
+						return Redirect::back()
+							->withInput()
+							->with('msgs', $msgs);
+					}
+
+				}else{
+					$msg = array('type'=>'error','msg'=>'No Email to recovery password!');
+					array_push($msgs,$msg);
+					return Redirect::back()
+						->withInput()
+						->with('msgs', $msgs);
+				}
+
 			}
 		}
 

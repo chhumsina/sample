@@ -23,6 +23,11 @@
 						{{Form::password('password',array('placeholder'=>'Password', 'id'=>'password','class'=>'form-control'))}}
 					</div>
 				</div>
+				<div class="form-group">
+					<div class="col-sm-5 col-sm-offset-4">
+						<a href="forget_password" title="Forget Password">Forget Password</a>
+					</div>
+				</div>
 
 				<div class="form-group">
 					<div class="col-sm-offset-2 col-sm-7">
