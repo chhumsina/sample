@@ -64,7 +64,6 @@
 					</div>
 
 				</fieldset>
-				<in
 			<?php echo Form::close() ?>
 				<hr/>
 				<a class="btn btn-primary" data-toggle="collapse" href="#changePassword" aria-expanded="false" aria-controls="changePassword">

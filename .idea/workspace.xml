@@ -4,6 +4,8 @@
     <list default="true" id="d017028d-ea31-42a9-9b39-781538dc5ac5" name="Default" comment="">
       <change type="DELETED" beforePath="C:\wamp\www\sample\assets\images\member\1426904101664_5G_sina.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/app/config/mail.php" afterPath="$PROJECT_DIR$/laravel-app/app/config/mail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/app/views/account/my-profile.blade.php" afterPath="$PROJECT_DIR$/laravel-app/app/views/account/my-profile.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +33,7 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/laravel-app/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="1360">
+            <state vertical-scroll-proportion="-18.961538" vertical-offset="85" max-vertical-offset="1360">
               <caret line="43" column="54" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="54" />
               <folding />
             </state>
@@ -41,8 +43,18 @@
       <file leaf-file-name="AccountController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/laravel-app/app/controllers/AccountController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.653847" vertical-offset="1512" max-vertical-offset="5644">
-              <caret line="119" column="36" selection-start-line="119" selection-start-column="36" selection-end-line="119" selection-end-column="36" />
+            <state vertical-scroll-proportion="-2.0" vertical-offset="4657" max-vertical-offset="5644">
+              <caret line="277" column="0" selection-start-line="277" selection-start-column="0" selection-end-line="277" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my-profile.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/laravel-app/app/views/account/my-profile.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5559633" vertical-offset="785" max-vertical-offset="1972">
+              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -61,18 +73,8 @@
       <file leaf-file-name="forget-password.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/laravel-app/app/views/email/forget-password.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="391">
+            <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="391">
               <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mail.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/laravel-app/app/config/mail.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8172043" vertical-offset="1176" max-vertical-offset="2227">
-              <caret line="96" column="19" selection-start-line="96" selection-start-column="19" selection-end-line="96" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -138,7 +140,6 @@
         <option value="$PROJECT_DIR$/assets/js/wysiwygCus.js" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/laravel-app/app/views/account/page.blade.php" />
-        <option value="$PROJECT_DIR$/laravel-app/app/views/account/my-profile.blade.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/views/account/login.blade.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/views/account/forget_password.blade.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/views/email/verify.blade.php" />
@@ -147,6 +148,7 @@
         <option value="$PROJECT_DIR$/laravel-app/app/models/Account.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/controllers/AccountController.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/config/mail.php" />
+        <option value="$PROJECT_DIR$/laravel-app/app/views/account/my-profile.blade.php" />
       </list>
     </option>
   </component>
@@ -183,6 +185,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -481,12 +484,11 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="mail&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/config/mail.php&#10;acc&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/models/Account.php&#10;login&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/login.blade.php&#10;ac&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/AccountController.php&#10;route&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/routes.php&#10;accou&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/AccountController.php&#10;cu&#9;FILE&#9;file://C:/wamp/www/sample/assets/js/wysiwygCus.js&#10;pro&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/my-profile.blade.php&#10;style&#9;FILE&#9;file://C:/wamp/www/sample/assets/css/style.css&#10;foo&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/footer.blade.php&#10;head&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/head.blade.php&#10;page&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/page.blade.php&#10;ap&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/config/app.php&#10;styl&#9;FILE&#9;file://C:/wamp/www/sample/assets/css/style.css&#10;footer&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/footer.blade.php&#10;main&#9;FILE&#9;file://C:/wamp/www/sample/assets/js/main.js&#10;me&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/menumember.blade.php&#10;my&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/my-profile.blade.php&#10;member&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/MemberController.php&#10;prof&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/my-profile.blade.php&#10;hea&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/head.blade.php&#10;accc&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/AccountController.php&#10;menu&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/menu.blade.php&#10;home&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/HomeController.php&#10;ohadmin&#9;null&#9;null&#10;li&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/backend/member/list.blade.php&#10;list&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/email/list_dealer.blade.php&#10;backend&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/BackendController.php&#10;filter&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/filters.php&#10;dash&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/backend/dashboard.blade.php&#10;das&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/dashboard/dashboard.blade.php&#10;ohadm&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/OhadminController.php" />
+    <property name="SearchEverywhereHistoryKey" value="pro&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/my-profile.blade.php&#10;mail&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/config/mail.php&#10;acc&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/models/Account.php&#10;login&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/login.blade.php&#10;ac&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/AccountController.php&#10;route&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/routes.php&#10;accou&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/AccountController.php&#10;cu&#9;FILE&#9;file://C:/wamp/www/sample/assets/js/wysiwygCus.js&#10;style&#9;FILE&#9;file://C:/wamp/www/sample/assets/css/style.css&#10;foo&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/footer.blade.php&#10;head&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/head.blade.php&#10;page&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/page.blade.php&#10;ap&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/config/app.php&#10;styl&#9;FILE&#9;file://C:/wamp/www/sample/assets/css/style.css&#10;footer&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/footer.blade.php&#10;main&#9;FILE&#9;file://C:/wamp/www/sample/assets/js/main.js&#10;me&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/menumember.blade.php&#10;my&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/my-profile.blade.php&#10;member&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/MemberController.php&#10;prof&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/my-profile.blade.php&#10;hea&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/head.blade.php&#10;accc&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/AccountController.php&#10;menu&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/menu.blade.php&#10;home&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/HomeController.php&#10;ohadmin&#9;null&#9;null&#10;li&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/backend/member/list.blade.php&#10;list&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/email/list_dealer.blade.php&#10;backend&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/BackendController.php&#10;filter&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/filters.php&#10;dash&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/backend/dashboard.blade.php&#10;das&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/dashboard/dashboard.blade.php&#10;ohadm&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/OhadminController.php" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../easysolutions_laravel" />
     <property name="FullScreen" value="false" />
     <property name="recentsLimit" value="5" />
@@ -519,15 +521,15 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -555,19 +557,19 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25037822" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25416037" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.61764705" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -586,9 +588,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24659607" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -871,13 +873,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/account/my-profile.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62271065" vertical-offset="102" max-vertical-offset="1989">
-          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/laravel-app/app/views/layouts/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.48658317" vertical-offset="0" max-vertical-offset="559">
@@ -935,14 +930,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/email/forget-password.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="391">
-          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/laravel-app/app/models/Account.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="357">
@@ -953,24 +940,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/laravel-app/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="1360">
+        <state vertical-scroll-proportion="-18.961538" vertical-offset="85" max-vertical-offset="1360">
           <caret line="43" column="54" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/controllers/AccountController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.653847" vertical-offset="1512" max-vertical-offset="5644">
-          <caret line="119" column="36" selection-start-line="119" selection-start-column="36" selection-end-line="119" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/laravel-app/app/config/mail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8172043" vertical-offset="1176" max-vertical-offset="2227">
-          <caret line="96" column="19" selection-start-line="96" selection-start-column="19" selection-end-line="96" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.26881722" vertical-offset="1176" max-vertical-offset="2227">
+          <caret line="78" column="70" selection-start-line="78" selection-start-column="70" selection-end-line="78" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/email/forget-password.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="391">
+          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/controllers/AccountController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0" vertical-offset="4657" max-vertical-offset="5644">
+          <caret line="277" column="0" selection-start-line="277" selection-start-column="0" selection-end-line="277" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/account/my-profile.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5559633" vertical-offset="785" max-vertical-offset="1972">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding />
         </state>
       </provider>
