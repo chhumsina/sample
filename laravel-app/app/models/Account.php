@@ -1,8 +1,8 @@
 <?php
 
 class Account extends \Eloquent {
-	protected $table = 'member';
-	protected $fillable = array('username','email','password','password_temp','first_name','last_name','location','phone','address','photo','cover','bio','status','about','use_type','confirmation_code');
+	protected $table = 'tbl_user';
+	protected $fillable = ['username','email','password','fname','lname','location_id','phone','address','photo','disable'];
 	public static $rules = array(
 		'username' => 'required',
 		'email' => 'required',

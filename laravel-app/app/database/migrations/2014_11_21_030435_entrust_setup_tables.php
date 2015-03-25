@@ -22,9 +22,9 @@ class EntrustSetupTables extends Migration
         // Creates the assigned_roles (Many-to-Many relation) table
         Schema::create('assigned_roles', function ($table) {
             $table->increments('id')->unsigned();
-            $table->integer('staff_id')->unsigned();
+            $table->integer('user_id')->unsigned();
             $table->integer('role_id')->unsigned();
-            $table->foreign('staff_id')->references('id')->on('staff')
+            $table->foreign('user_id')->references('id')->on('users')
                 ->onUpdate('cascade')->onDelete('cascade');
             $table->foreign('role_id')->references('id')->on('roles');
         });
@@ -55,7 +55,7 @@ class EntrustSetupTables extends Migration
     public function down()
     {
         Schema::table('assigned_roles', function (Blueprint $table) {
-            $table->dropForeign('assigned_roles_staff_id_foreign');
+            $table->dropForeign('assigned_roles_user_id_foreign');
             $table->dropForeign('assigned_roles_role_id_foreign');
         });
 
