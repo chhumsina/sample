@@ -49,6 +49,7 @@ CREATE TABLE IF NOT EXISTS `khmermoo`.`tbl_user` (
   `lname` VARCHAR(45) NULL,
   `username` VARCHAR(30) NULL,
   `password` VARCHAR(70) NULL,
+  `remember_token` VARCHAR(70) NULL,
   `email` VARCHAR(150) NULL,
   `phone` VARCHAR(45) NULL,
   `address` TEXT NULL,
@@ -76,13 +77,13 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `khmermoo`.`tbl_cateory`
+-- Table `khmermoo`.`tbl_category`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `khmermoo`.`tbl_cateory` (
+CREATE TABLE IF NOT EXISTS `khmermoo`.`tbl_category` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NULL,
   `description` TEXT NULL,
-  `parent_id` INT NOT NULL,
+  `parent_id` INT NULL,
   `disable` SMALLINT(1) NULL,
   `created_at` DATETIME NULL,
   `updated_at` DATETIME NULL,
@@ -91,7 +92,7 @@ CREATE TABLE IF NOT EXISTS `khmermoo`.`tbl_cateory` (
   INDEX `fk_tbl_cateory_tbl_cateory1_idx` (`parent_id` ASC),
   CONSTRAINT `fk_tbl_cateory_tbl_cateory1`
     FOREIGN KEY (`parent_id`)
-    REFERENCES `khmermoo`.`tbl_cateory` (`id`)
+    REFERENCES `khmermoo`.`tbl_category` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -116,16 +117,16 @@ CREATE TABLE IF NOT EXISTS `khmermoo`.`tbl_brand` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NULL,
   `description` TEXT NULL,
-  `cateory_id` INT NOT NULL,
+  `category_id` INT NOT NULL,
   `disable` SMALLINT(1) NULL,
   `created_at` DATETIME NULL,
   `updated_at` DATETIME NULL,
   `deleted_at` DATETIME NULL,
   PRIMARY KEY (`id`),
-  INDEX `fk_tbl_brand_tbl_cateory1_idx` (`cateory_id` ASC),
+  INDEX `fk_tbl_brand_tbl_cateory1_idx` (`category_id` ASC),
   CONSTRAINT `fk_tbl_brand_tbl_cateory1`
-    FOREIGN KEY (`cateory_id`)
-    REFERENCES `khmermoo`.`tbl_cateory` (`id`)
+    FOREIGN KEY (`category_id`)
+    REFERENCES `khmermoo`.`tbl_category` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -141,7 +142,7 @@ CREATE TABLE IF NOT EXISTS `khmermoo`.`tbl_ads` (
   `view` INT NULL DEFAULT 0,
   `description` TEXT NULL,
   `user_id` BIGINT NOT NULL,
-  `cateory_id` INT NOT NULL,
+  `category_id` INT NOT NULL,
   `type_id` INT NOT NULL,
   `brand_id` INT NOT NULL,
   `disable` SMALLINT(1) NULL,
@@ -150,7 +151,7 @@ CREATE TABLE IF NOT EXISTS `khmermoo`.`tbl_ads` (
   `deleted_at` DATETIME NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_tbl_ads_tbl_user1_idx` (`user_id` ASC),
-  INDEX `fk_tbl_ads_tbl_cateory1_idx` (`cateory_id` ASC),
+  INDEX `fk_tbl_ads_tbl_cateory1_idx` (`category_id` ASC),
   INDEX `fk_tbl_ads_tbl_type1_idx` (`type_id` ASC),
   INDEX `fk_tbl_ads_tbl_brand1_idx` (`brand_id` ASC),
   CONSTRAINT `fk_tbl_ads_tbl_user1`
@@ -159,8 +160,8 @@ CREATE TABLE IF NOT EXISTS `khmermoo`.`tbl_ads` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_tbl_ads_tbl_cateory1`
-    FOREIGN KEY (`cateory_id`)
-    REFERENCES `khmermoo`.`tbl_cateory` (`id`)
+    FOREIGN KEY (`category_id`)
+    REFERENCES `khmermoo`.`tbl_category` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_tbl_ads_tbl_type1`
@@ -198,9 +199,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `khmermoo`.`contactor`
+-- Table `khmermoo`.`tbl_contactor`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `khmermoo`.`contactor` (
+CREATE TABLE IF NOT EXISTS `khmermoo`.`tbl_contactor` (
   `id` BIGINT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NULL,
   `phone` VARCHAR(45) NULL,
@@ -344,14 +345,6 @@ CREATE TABLE IF NOT EXISTS `khmermoo`.`tbl_rate` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `khmermoo`.`timestamps`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `khmermoo`.`timestamps` (
-  `create_time` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
-  `update_time` TIMESTAMP NULL);
 
 
 SET SQL_MODE=@OLD_SQL_MODE;
