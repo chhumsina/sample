@@ -29,7 +29,7 @@ Route::post('ohadmin', 'OhadminController@validate');
 // Member register
 Route::get('register', 'AccountController@register');
 Route::post('register', 'AccountController@store');
-Route::get('register/verify/{confirmationCode}', [
+Route::get('register/activate/{confirmationCode}', [
     'as' => 'confirmation_path',
     'uses' => 'AccountController@confirm'
 ]);

@@ -45,7 +45,7 @@ class AccountController extends \BaseController {
 					User::create(array('username' => $username, 'email' => Input::get('email'), 'role_id' => 2, 'password' => Hash::make(Input::get('password')), 'confirmation_code' => $confirmation_code, 'location_id' => 1));
 					$messages = array('code' => $confirmation_code, 'username' => $username);
 
-					Mail::send('email.verify', $messages, function ($message) {
+					Mail::send('email.activate', $messages, function ($message) {
 						$message->to(Input::get('email'), Input::get('username'))->subject('Khmermoo.com : Active Account');
 					});
 
@@ -82,7 +82,7 @@ class AccountController extends \BaseController {
 
 		if (!$account)
 		{
-			$msg = array('type'=>'error','msg'=>'The actiaved link is expired.');
+			$msg = array('type'=>'error','msg'=>'The activated link is expired.');
 			array_push($msgs,$msg);
 
 			return Redirect::to('login')
@@ -96,6 +96,15 @@ class AccountController extends \BaseController {
 
 		$msg = array('type'=>'success','msg'=>'You have successfully activated your account.');
 		array_push($msgs,$msg);
+
+		$email = $account->email;
+		$username = $account->username;
+
+		$messages = array( 'username' => $username, 'password'=> $account->password,'email'=>$email);
+
+		Mail::send('email.info', $messages, function ($message) use ($messages){
+			$message->to($messages['email'], $messages['username'])->subject('Khmermoo.com : Account Information');
+		});
 
 		return Redirect::to('login')
 			->withInput()

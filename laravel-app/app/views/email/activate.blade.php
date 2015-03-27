@@ -12,7 +12,7 @@
 	Thank you for registering on Khmermoo.<br/><br/>
 
 	Your account has been created and is waiting to be activated. Please follow a activated link below.<br/>
-	{{ URL::to('register/verify/' . $code) }}.<br/><br/>
+	{{ URL::to('register/activate/' . $code) }}.<br/><br/>
 	Thanks you,<br/>
 	Khmermoo Admin<br/>
 	Khmermoo.com<br/>
