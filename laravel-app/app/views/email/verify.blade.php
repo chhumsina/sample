@@ -4,12 +4,18 @@
 	<meta charset="utf-8">
 </head>
 <body>
-<h2>Recovery Password</h2>
+<h2>Activate Account</h2>
 
 <div>
-	Thanks for creating an account with the verification demo app.
-	Please follow the link below to verify your email address
-	{{ URL::to('register/verify/' . $code) }}.<br/>
+	Dear {{$username}},<br/><br/>
+
+	Thank you for registering on Khmermoo.<br/><br/>
+
+	Your account has been created and is waiting to be activated. Please follow a activated link below.<br/>
+	{{ URL::to('register/verify/' . $code) }}.<br/><br/>
+	Thanks you,<br/>
+	Khmermoo Admin<br/>
+	Khmermoo.com<br/>
 
 </div>
 

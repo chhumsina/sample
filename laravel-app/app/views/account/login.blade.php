@@ -1,4 +1,4 @@
-@section('title', 'List Member')
+@section('title', 'Login')
 @section('content')
 	<?php
 	$baseUrl = URL::to('/');
