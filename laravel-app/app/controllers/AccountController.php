@@ -141,6 +141,7 @@ class AccountController extends \BaseController {
 	// validate login
 	public function validate()
 	{
+		$msgs = array();
 		// attempt to do the login
 		$auth = Auth::attempt(
 			array(
@@ -149,24 +150,28 @@ class AccountController extends \BaseController {
 			)
 		);
 
-		$sms = 'Your username/password combination was incorrect.';
-
 		$user = Auth::user();
 
 		if ($auth) {
 			if ($user->disable == 1 && $user->role_id == 2) {
 				return Redirect::to('member/manage_ads');
 			} else {
-				$sms = 'This account not yet active!';
+				$msg = array('type'=>'error','msg'=>'Your account is not activated yet!');
+				array_push($msgs,$msg);
 				Auth::logout();
+
+				return Redirect::to('login')
+					->with('msgs', $msgs);
 			}
 
 		}
 		// validation not successful, send back to form
+		$msg = array('type'=>'error','msg'=>'Your username/password combination was incorrect!');
+		array_push($msgs,$msg);
 
-		return Redirect::to('/')
+		return Redirect::to('login')
 			->withInput(Input::except('password'))
-			->with('flash_notice_error', $sms);
+			->with('msgs', $msgs);
 	}
 
 	// Member Dashboard
