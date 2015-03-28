@@ -1,6 +1,6 @@
 <?php
 
 class Location extends \Eloquent {
-	protected $table = 'location';
+	protected $table = 'tbl_location';
 	protected $fillable = array();
 }

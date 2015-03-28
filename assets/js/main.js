@@ -28,7 +28,7 @@ $(document).ready(function(){
 		message: 'This value is not valid',
 		icon: {
 			valid: 'glyphicon glyphicon-ok',
-			invalid: 'glyphicon glyphicon-remove',
+			//invalid: 'glyphicon glyphicon-remove',
 			validating: 'glyphicon glyphicon-refresh'
 		},
 		fields: {
@@ -51,13 +51,22 @@ $(document).ready(function(){
 			username: {
 				message: 'The username is not valid',
 				validators: {
+					// The validator will create an Ajax request
+					// sending { username: 'its value' } to the back-end
+					remote: {
+						message: 'The username is not available',
+						url: '/path/to/backend/',
+						type: 'POST'
+					}
+				},
+				validators: {
 					notEmpty: {
 						message: 'The username is required'
 					},
 					stringLength: {
-						min: 6,
-						max: 30,
-						message: 'The username must be more than 6 and less than 30 characters long'
+						min: 4,
+						max: 20,
+						message: 'The username must be more than 4 and less than 20 characters long'
 					},
 					regexp: {
 						regexp: /^[a-zA-Z0-9_\.]+$/,
@@ -77,12 +86,68 @@ $(document).ready(function(){
 			},
 			password: {
 				validators: {
+					identical: {
+						field: 'cpassword',
+						message: 'The password and its confirm are not the same'
+					},
+					stringLength: {
+						min: 6,
+						max: 20,
+						message: 'The password must be more than 6 and less than 20 characters long'
+					},
+
 					notEmpty: {
 						message: 'The password is required'
 					},
 					different: {
 						field: 'username',
 						message: 'The password cannot be the same as username'
+					}
+				}
+			},
+			cpassword: {
+				validators: {
+					identical: {
+						field: 'password',
+						message: 'The password and its confirm are not the same'
+					},
+					notEmpty: {
+						message: 'The confirm password is required'
+					}
+				}
+			},
+			newPassword: {
+				validators: {
+					identical: {
+						field: 'conPassword',
+						message: 'The new password and its confirm password are not the same'
+					},
+					stringLength: {
+						min: 6,
+						max: 20,
+						message: 'The new password must be more than 6 and less than 20 characters long'
+					},
+
+					notEmpty: {
+						message: 'The new password is required'
+					}
+				}
+			},
+			conPassword: {
+				validators: {
+					identical: {
+						field: 'newPasswordd',
+						message: 'The new password and its confirm password are not the same'
+					},
+					notEmpty: {
+						message: 'The confirm password is required'
+					}
+				}
+			},
+			curPassword: {
+				validators: {
+					notEmpty: {
+						message: 'The current password is required'
 					}
 				}
 			},
@@ -131,6 +196,11 @@ $(document).ready(function(){
 		$("#image-upload").change(function(){
 			readURL(this);
 		});;
+	});
+
+	// on change
+	$(document).on('keyup','#username',function() {
+		$('.pageName span').text($(this).val());
 	});
 
 });

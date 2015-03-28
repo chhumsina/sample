@@ -27,8 +27,8 @@ class AccountController extends \BaseController {
 		$msgs = array();
 		$data =  Input::except(array('_token')) ;
 		$rule  =  array(
-			'username'       => 'required|unique:member',
-			'email'      => 'required|email|unique:member',
+			'username'   => 'required|unique:tbl_user',
+			'email'      => 'required|email|unique:tbl_user',
 			'password'   => 'required|min:6|same:cpassword',
 			'cpassword'  => 'required|min:6'
 		) ;
@@ -37,32 +37,35 @@ class AccountController extends \BaseController {
 
 		if ($validator->passes())
 		{
-			$confirmation_code = str_random(30);
+			if(Input::has('register')){
+				if(!Input::has('honey')){
+					$confirmation_code = str_random(30);
+					$username = ucfirst(strtolower(Input::get('username')));
 
-			Account::create(array(
-				'username' => Input::get('username'),
-				'email' => Input::get('email'),
-				'use_type' => 2,
-				'password' => Hash::make(Input::get('password')),
-				'confirmation_code' => $confirmation_code
-			));
-			$messages = array( 'code' => $confirmation_code );
+					User::create(array('username' => $username, 'email' => Input::get('email'), 'role_id' => 2, 'password' => Hash::make(Input::get('password')), 'confirmation_code' => $confirmation_code, 'location_id' => 1));
+					$messages = array('code' => $confirmation_code, 'username' => $username);
 
-			Mail::send('email.verify', $messages, function($message) {
-				$message->to(Input::get('email'), Input::get('username'))
-					->subject('Verify your email address');
-			});
+					Mail::send('email.activate', $messages, function ($message) {
+						$message->to(Input::get('email'), Input::get('username'))->subject('Khmermoo.com : Activate Account');
+					});
 
-			$msg = array('type'=>'success','msg'=>'Thanks for signing up! Please check your email.');
-			array_push($msgs,$msg);
-			return Redirect::back()
-				->with('msgs', $msgs);
+					$msg = array('type' => 'success', 'msg' => 'Thanks '.$username.' for signing up! Please check your email ('.Input::get('email').') to activate the account.');
+					array_push($msgs, $msg);
+
+					return Redirect::back()->with('msgs', $msgs);
+				}
+
+				$msg = array('type'=>'error','msg'=>'Contact me to get money for your job :)');
+				array_push($msgs,$msg);
+				return Redirect::back()
+					->withInput()
+					->with('msgs', $msgs);
+			}
 		}
 
-		$msg = array('type'=>'error','msg'=>'The account is not...');
-		array_push($msgs,$msg);
 		return Redirect::back()
 			->withInput()
+			->withErrors($validator)
 			->with('msgs', $msgs);
 	}
 
@@ -75,19 +78,33 @@ class AccountController extends \BaseController {
 			return Redirect::to('/');
 		}
 
-		$account = Account::whereConfirmationCode($confirmation_code)->first();
+		$account = User::whereConfirmationCode($confirmation_code)->first();
 
 		if (!$account)
 		{
-			return Redirect::to('/');
+			$msg = array('type'=>'error','msg'=>'The activated link is expired.');
+			array_push($msgs,$msg);
+
+			return Redirect::to('login')
+				->withInput()
+				->with('msgs', $msgs);
 		}
 
-		$account->status = 1;
+		$account->disable = 1;
 		$account->confirmation_code = null;
 		$account->save();
 
-		$msg = array('type'=>'success','msg'=>'You have successfully verified your account.');
+		$msg = array('type'=>'success','msg'=>'You have successfully activated your account.');
 		array_push($msgs,$msg);
+
+		$email = $account->email;
+		$username = $account->username;
+
+		$messages = array( 'username' => $username, 'password'=> $account->password,'email'=>$email);
+
+		Mail::send('email.info', $messages, function ($message) use ($messages){
+			$message->to($messages['email'], $messages['username'])->subject('Khmermoo.com : Account Information');
+		});
 
 		return Redirect::to('login')
 			->withInput()
@@ -105,7 +122,7 @@ class AccountController extends \BaseController {
 			$acc->password_temp = '';
 			$acc->confirmation_code = '';
 			if($acc->save()) {
-				$msg = array('type'=>'success','msg'=>'Your account is recoveried now, please login with your New password!.');
+				$msg = array('type'=>'success','msg'=>'Your account is recoveried now, please login with your New password.');
 				array_push($msgs,$msg);
 
 				return Redirect::to('login')
@@ -124,6 +141,7 @@ class AccountController extends \BaseController {
 	// validate login
 	public function validate()
 	{
+		$msgs = array();
 		// attempt to do the login
 		$auth = Auth::attempt(
 			array(
@@ -132,24 +150,28 @@ class AccountController extends \BaseController {
 			)
 		);
 
-		$sms = 'Your username/password combination was incorrect.';
-
 		$user = Auth::user();
 
 		if ($auth) {
-			if ($user->disable == 0 && $user->role_id == 1) {
+			if ($user->disable == 1 && $user->role_id == 2) {
 				return Redirect::to('member/manage_ads');
 			} else {
-				$sms = 'This account not yet active!';
+				$msg = array('type'=>'error','msg'=>'Your account is not activated yet!');
+				array_push($msgs,$msg);
 				Auth::logout();
+
+				return Redirect::to('login')
+					->with('msgs', $msgs);
 			}
 
 		}
 		// validation not successful, send back to form
+		$msg = array('type'=>'error','msg'=>'Your username/password combination was incorrect!');
+		array_push($msgs,$msg);
 
-		return Redirect::to('/')
+		return Redirect::to('login')
 			->withInput(Input::except('password'))
-			->with('flash_notice_error', $sms);
+			->with('msgs', $msgs);
 	}
 
 	// Member Dashboard
@@ -161,7 +183,7 @@ class AccountController extends \BaseController {
 		public function myProfile()
 		{
 			$acc = Auth::user();
-			$locations = Location::orderBy('title','asc')->lists('title','id');
+			$locations = Location::orderBy('name','asc')->lists('name','id');
 			$this->layout->content = View::make('account.my-profile',compact('locations','acc'));
 		}
 		
@@ -250,15 +272,16 @@ class AccountController extends \BaseController {
 
 					$acc->confirmation_code = $code;
 					$acc->password_temp = Hash::make($password);
+					$username = $acc->username;
 
-					$messages = array( 'code' => $code, 'password'=> $password);
+					$messages = array( 'code' => $code, 'password'=> $password, 'username'=>$username);
 					if($acc->save()) {
-						Mail::send('email.forget-password', $messages, function($message) {
-							$message->to(Input::get('email'), Input::get('email'))
-								->subject('Recovery Password!');
+						Mail::send('email.forget-password', $messages, function($message) use ($username){
+							$message->to(Input::get('email'), $username)
+								->subject('Khmermoo.com : Recovery Password');
 						});
 
-						$msg = array('type'=>'success','msg'=>'Password click the recovery link vai your email.');
+						$msg = array('type'=>'success','msg'=>'Recovery Password was sent to your email ('.Input::get('email').').');
 						array_push($msgs,$msg);
 						return Redirect::back()
 							->withInput()
@@ -280,13 +303,25 @@ class AccountController extends \BaseController {
 		{
 			$msgs = array();
 			if (Input::has('curPassword')) {
+				$curPassword = Input::get('curPassword');
+				$newPassword = Input::get('newPassword');
+
 				$user = Auth::user();
-				if (Hash::check(Input::get('curPassword'), $user->password)) {
+				if (Hash::check($newPassword, $user->password)) {
 					if (Input::has('newPassword') && Input::has('conPassword')) {
-						if (Input::get('newPassword') == Input::get('conPassword')) {
-							$newPassword = Hash::make(Input::get('newPassword'));
+						if ($newPassword == Input::get('conPassword')) {
+							$newPassword = Hash::make($newPassword);
 							$user->password = $newPassword;
 							$user->save();
+
+							$email = $user->email;
+							$username = $user->username;
+
+							$messages = array('curpassword'=>$curPassword,'newpassword' => $newPassword, 'username' => $username);
+
+							Mail::send('email.change-password', $messages, function ($message) use ($email,$username) {
+								$message->to($email, $username)->subject('Khmermoo.com : Change Password');
+							});
 
 							$msg = array('type'=>'success','msg'=>'Password changed successfully!');
 							array_push($msgs,$msg);

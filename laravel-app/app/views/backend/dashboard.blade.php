@@ -51,7 +51,7 @@
 							<i class="fa fa-comments fa-5x"></i>
 						</div>
 						<div class="col-xs-9 text-right">
-							<div class="huge">{{$posts}}</div>
+							<div class="huge">{{$ads}}</div>
 							<div>Active:{{$postActive}} <br/>Inactive:{{$postInactive}}</div>
 						</div>
 					</div>

@@ -1,4 +1,4 @@
-@section('title', 'List Member')
+@section('title', 'Login')
 @section('content')
 	<?php
 	$baseUrl = URL::to('/');
@@ -25,7 +25,8 @@
 				</div>
 				<div class="form-group">
 					<div class="col-sm-5 col-sm-offset-4">
-						<a href="forget_password" title="Forget Password">Forget Password</a>
+						<a href="forget_password" title="Forget Password">Forget Password</a> |
+						<a href="register" title="Register">Register to be member</a>
 					</div>
 				</div>
 

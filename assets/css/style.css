@@ -244,3 +244,11 @@ input {
     text-shadow:#FFFFFF 1px 1px 4px;
     width:93% !important;
 }
+
+.honey {
+    display: none;
+}
+.pageName {
+    margin-left:2px;
+    margin-top:6px;
+}
