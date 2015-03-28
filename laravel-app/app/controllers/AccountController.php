@@ -46,7 +46,7 @@ class AccountController extends \BaseController {
 					$messages = array('code' => $confirmation_code, 'username' => $username);
 
 					Mail::send('email.activate', $messages, function ($message) {
-						$message->to(Input::get('email'), Input::get('username'))->subject('Khmermoo.com : Active Account');
+						$message->to(Input::get('email'), Input::get('username'))->subject('Khmermoo.com : Activate Account');
 					});
 
 					$msg = array('type' => 'success', 'msg' => 'Thanks '.$username.' for signing up! Please check your email ('.Input::get('email').') to activate the account.');
@@ -122,7 +122,7 @@ class AccountController extends \BaseController {
 			$acc->password_temp = '';
 			$acc->confirmation_code = '';
 			if($acc->save()) {
-				$msg = array('type'=>'success','msg'=>'Your account is recoveried now, please login with your New password!.');
+				$msg = array('type'=>'success','msg'=>'Your account is recoveried now, please login with your New password.');
 				array_push($msgs,$msg);
 
 				return Redirect::to('login')
@@ -183,7 +183,7 @@ class AccountController extends \BaseController {
 		public function myProfile()
 		{
 			$acc = Auth::user();
-			$locations = Location::orderBy('title','asc')->lists('title','id');
+			$locations = Location::orderBy('name','asc')->lists('name','id');
 			$this->layout->content = View::make('account.my-profile',compact('locations','acc'));
 		}
 		
@@ -272,15 +272,16 @@ class AccountController extends \BaseController {
 
 					$acc->confirmation_code = $code;
 					$acc->password_temp = Hash::make($password);
+					$username = $acc->username;
 
-					$messages = array( 'code' => $code, 'password'=> $password);
+					$messages = array( 'code' => $code, 'password'=> $password, 'username'=>$username);
 					if($acc->save()) {
-						Mail::send('email.forget-password', $messages, function($message) {
-							$message->to(Input::get('email'), Input::get('email'))
-								->subject('Recovery Password!');
+						Mail::send('email.forget-password', $messages, function($message) use ($username){
+							$message->to(Input::get('email'), $username)
+								->subject('Khmermoo.com : Recovery Password');
 						});
 
-						$msg = array('type'=>'success','msg'=>'Password click the recovery link vai your email.');
+						$msg = array('type'=>'success','msg'=>'Recovery Password was sent to your email ('.Input::get('email').').');
 						array_push($msgs,$msg);
 						return Redirect::back()
 							->withInput()

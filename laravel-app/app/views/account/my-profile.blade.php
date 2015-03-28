@@ -44,7 +44,7 @@
 					<div class="form-group">
 						{{Form::label('location', 'Location', array('class' => 'col-sm-2 control-label'))}}
 						<div class="col-sm-5">
-							{{ Form::select('location', $locations, array($acc->location), array('class' => 'form-control')) }}
+							{{ Form::select('location', $locations, array($acc->location_id), array('class' => 'form-control')) }}
 						</div>
 					</div>
 

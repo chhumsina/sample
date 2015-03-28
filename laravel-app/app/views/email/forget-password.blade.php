@@ -4,12 +4,14 @@
 	<meta charset="utf-8">
 </head>
 <body>
-<h2>Verify Your Email Address</h2>
+<h2>Recovery Password</h2>
 
 <div>
-	Thanks for creating an account with the verification demo app.
-	Please follow the link below to verify your email
-	<br/><br/>New password: {{$password}}<br/>
+	Dear {{$username}},<br/><br/>
+
+	There was someone try to recovery your password,<br/>
+	If it was you, please click the recovery link below:
+	<br/><br/>New password: <b>{{$password}}</b><br/>
 	{{ URL::to('recovery/password/' . $code) }}.<br/>
 
 </div>
