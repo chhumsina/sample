@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d017028d-ea31-42a9-9b39-781538dc5ac5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/app/controllers/AccountController.php" afterPath="$PROJECT_DIR$/laravel-app/app/controllers/AccountController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/app/models/Location.php" afterPath="$PROJECT_DIR$/laravel-app/app/models/Location.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/app/views/email/forget-password.blade.php" afterPath="$PROJECT_DIR$/laravel-app/app/views/email/forget-password.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/app/views/account/login.blade.php" afterPath="$PROJECT_DIR$/laravel-app/app/views/account/login.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/app/config/mail.php" afterPath="$PROJECT_DIR$/laravel-app/app/config/mail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/main.js" afterPath="$PROJECT_DIR$/assets/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel-app/app/views/account/my-profile.blade.php" afterPath="$PROJECT_DIR$/laravel-app/app/views/account/my-profile.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,18 +53,48 @@
       <file leaf-file-name="AccountController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/laravel-app/app/controllers/AccountController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.692307" vertical-offset="2893" max-vertical-offset="6035">
-              <caret line="185" column="69" selection-start-line="185" selection-start-column="69" selection-end-line="185" selection-end-column="69" />
+            <state vertical-scroll-proportion="-4.581818" vertical-offset="5171" max-vertical-offset="6239">
+              <caret line="319" column="58" selection-start-line="319" selection-start-column="47" selection-end-line="319" selection-end-column="58" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my-profile.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="change-password.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/laravel-app/app/views/email/change-password.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.39605734" vertical-offset="0" max-vertical-offset="558">
+              <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mail.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/laravel-app/app/config/mail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.307693" vertical-offset="138" max-vertical-offset="2227">
+              <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my-profile.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/laravel-app/app/views/account/my-profile.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.62018347" vertical-offset="444" max-vertical-offset="1972">
-              <caret line="46" column="91" selection-start-line="46" selection-start-column="91" selection-end-line="46" selection-end-column="91" />
+            <state vertical-scroll-proportion="-3.3076923" vertical-offset="1257" max-vertical-offset="1972">
+              <caret line="79" column="65" selection-start-line="79" selection-start-column="54" selection-end-line="79" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2102" max-vertical-offset="3621">
+              <caret line="149" column="45" selection-start-line="149" selection-start-column="45" selection-end-line="149" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -81,7 +108,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/laravel-app/app/models/Member.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/database/seeds/MemberTableSeeder.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/views/layouts/backendpartial/footer.blade.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/views/backend/member/list.blade.php" />
@@ -119,7 +145,6 @@
         <option value="$PROJECT_DIR$/laravel-app/app/controllers/BackendController.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/views/layouts/partial/render-message-form.blade.php" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
-        <option value="$PROJECT_DIR$/assets/js/main.js" />
         <option value="$PROJECT_DIR$/laravel-app/app/views/account/register.blade.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/views/layouts/partial/render-message.blade.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/routes.php" />
@@ -127,11 +152,13 @@
         <option value="$PROJECT_DIR$/laravel-app/app/views/email/info.blade.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/views/account/login.blade.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/views/account/forget_password.blade.php" />
-        <option value="$PROJECT_DIR$/laravel-app/app/config/mail.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/views/email/forget-password.blade.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/models/Location.php" />
-        <option value="$PROJECT_DIR$/laravel-app/app/controllers/AccountController.php" />
         <option value="$PROJECT_DIR$/laravel-app/app/views/account/my-profile.blade.php" />
+        <option value="$PROJECT_DIR$/assets/js/main.js" />
+        <option value="$PROJECT_DIR$/laravel-app/app/controllers/AccountController.php" />
+        <option value="$PROJECT_DIR$/laravel-app/app/config/mail.php" />
+        <option value="$PROJECT_DIR$/laravel-app/app/views/email/change-password.blade.php" />
       </list>
     </option>
   </component>
@@ -284,6 +311,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -349,7 +402,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="my&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/my-profile.blade.php&#10;mail&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/config/mail.php&#10;forget&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/forget_password.blade.php&#10;login&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/login.blade.php&#10;fil&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/filters.php&#10;render&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/render-message.blade.php&#10;main&#9;FILE&#9;file://C:/wamp/www/sample/assets/js/main.js&#10;jquery&#9;FILE&#9;file://C:/wamp/www/sample/assets/js/jquery.js&#10;style&#9;FILE&#9;file://C:/wamp/www/sample/assets/css/style.css&#10;accou&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/AccountController.php&#10;prof&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/my-profile.blade.php&#10;account&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/AccountController.php&#10;regi&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/register.blade.php&#10;memberco&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/MemberController.php&#10;mem&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/database/seeds/MemberTableSeeder.php&#10;home&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/HomeController.php&#10;pro&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/my-profile.blade.php&#10;acc&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/models/Account.php&#10;ac&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/AccountController.php&#10;route&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/routes.php&#10;cu&#9;FILE&#9;file://C:/wamp/www/sample/assets/js/wysiwygCus.js&#10;foo&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/footer.blade.php&#10;head&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/head.blade.php&#10;page&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/page.blade.php&#10;ap&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/config/app.php&#10;styl&#9;FILE&#9;file://C:/wamp/www/sample/assets/css/style.css&#10;footer&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/footer.blade.php&#10;me&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/menumember.blade.php&#10;member&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/MemberController.php&#10;hea&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/head.blade.php&#10;accc&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/AccountController.php&#10;menu&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/menu.blade.php&#10;ohadmin&#9;null&#9;null&#10;li&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/backend/member/list.blade.php&#10;list&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/email/list_dealer.blade.php&#10;backend&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/BackendController.php&#10;filter&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/filters.php&#10;dash&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/backend/dashboard.blade.php&#10;das&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/dashboard/dashboard.blade.php&#10;ohadm&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/OhadminController.php" />
+    <property name="SearchEverywhereHistoryKey" value="mail&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/config/mail.php&#10;main&#9;FILE&#9;file://C:/wamp/www/sample/assets/js/main.js&#10;my&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/my-profile.blade.php&#10;forget&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/forget_password.blade.php&#10;login&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/login.blade.php&#10;fil&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/filters.php&#10;render&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/render-message.blade.php&#10;jquery&#9;FILE&#9;file://C:/wamp/www/sample/assets/js/jquery.js&#10;style&#9;FILE&#9;file://C:/wamp/www/sample/assets/css/style.css&#10;accou&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/AccountController.php&#10;prof&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/my-profile.blade.php&#10;account&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/AccountController.php&#10;regi&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/register.blade.php&#10;memberco&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/MemberController.php&#10;mem&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/database/seeds/MemberTableSeeder.php&#10;home&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/HomeController.php&#10;pro&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/my-profile.blade.php&#10;acc&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/models/Account.php&#10;ac&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/AccountController.php&#10;route&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/routes.php&#10;cu&#9;FILE&#9;file://C:/wamp/www/sample/assets/js/wysiwygCus.js&#10;foo&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/footer.blade.php&#10;head&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/head.blade.php&#10;page&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/account/page.blade.php&#10;ap&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/config/app.php&#10;styl&#9;FILE&#9;file://C:/wamp/www/sample/assets/css/style.css&#10;footer&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/footer.blade.php&#10;me&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/menumember.blade.php&#10;member&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/MemberController.php&#10;hea&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/head.blade.php&#10;accc&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/AccountController.php&#10;menu&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/layouts/partial/menu.blade.php&#10;ohadmin&#9;null&#9;null&#10;li&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/backend/member/list.blade.php&#10;list&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/email/list_dealer.blade.php&#10;backend&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/BackendController.php&#10;filter&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/filters.php&#10;dash&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/backend/dashboard.blade.php&#10;das&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/views/dashboard/dashboard.blade.php&#10;ohadm&#9;FILE&#9;file://C:/wamp/www/sample/laravel-app/app/controllers/OhadminController.php" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../easysolutions_laravel" />
     <property name="FullScreen" value="false" />
     <property name="recentsLimit" value="5" />
@@ -357,9 +410,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp\www\sample\laravel-app\app\views\email" />
+      <recent name="C:\wamp\www\sample\laravel-app\app\views\account" />
       <recent name="C:\wamp\www\sample\laravel-app\app\views\layouts\partial" />
       <recent name="C:\wamp\www\sample\laravel-app\app\models" />
-      <recent name="C:\wamp\www\sample\laravel-app\app\views\account" />
       <recent name="C:\wamp\www\sample\assets\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -454,13 +507,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/layouts/partial/content.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="584">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/laravel-app/app/views/account/my-map.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1827957" vertical-offset="0" max-vertical-offset="558">
@@ -671,13 +717,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6404109" vertical-offset="1813" max-vertical-offset="2975">
-          <caret line="163" column="29" selection-start-line="163" selection-start-column="29" selection-end-line="163" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/laravel-app/app/views/layouts/partial/render-message-form.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="272">
@@ -760,34 +799,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/account/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="884">
-          <caret line="28" column="81" selection-start-line="28" selection-start-column="81" selection-end-line="28" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/account/register.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="1190">
-          <caret line="10" column="122" selection-start-line="10" selection-start-column="108" selection-end-line="10" selection-end-column="122" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/laravel-app/app/views/account/forget_password.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="680">
           <caret line="10" column="115" selection-start-line="10" selection-start-column="115" selection-end-line="10" selection-end-column="115" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/config/mail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-57.46154" vertical-offset="138" max-vertical-offset="2227">
-          <caret line="96" column="31" selection-start-line="96" selection-start-column="19" selection-end-line="96" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -816,18 +831,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-app/app/controllers/AccountController.php">
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/account/login.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.692307" vertical-offset="2893" max-vertical-offset="6035">
-          <caret line="185" column="69" selection-start-line="185" selection-start-column="69" selection-end-line="185" selection-end-column="69" />
+        <state vertical-scroll-proportion="0.86055046" vertical-offset="7" max-vertical-offset="884">
+          <caret line="28" column="81" selection-start-line="28" selection-start-column="81" selection-end-line="28" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/account/register.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03046595" vertical-offset="153" max-vertical-offset="1190">
+          <caret line="10" column="122" selection-start-line="10" selection-start-column="108" selection-end-line="10" selection-end-column="122" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/laravel-app/app/views/account/my-profile.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62018347" vertical-offset="444" max-vertical-offset="1972">
-          <caret line="46" column="91" selection-start-line="46" selection-start-column="91" selection-end-line="46" selection-end-column="91" />
+        <state vertical-scroll-proportion="-3.3076923" vertical-offset="1257" max-vertical-offset="1972">
+          <caret line="79" column="65" selection-start-line="79" selection-start-column="54" selection-end-line="79" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2102" max-vertical-offset="3621">
+          <caret line="149" column="45" selection-start-line="149" selection-start-column="45" selection-end-line="149" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/config/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.307693" vertical-offset="138" max-vertical-offset="2227">
+          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/controllers/AccountController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.581818" vertical-offset="5171" max-vertical-offset="6239">
+          <caret line="319" column="58" selection-start-line="319" selection-start-column="47" selection-end-line="319" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel-app/app/views/email/change-password.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39605734" vertical-offset="0" max-vertical-offset="558">
+          <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
           <folding />
         </state>
       </provider>

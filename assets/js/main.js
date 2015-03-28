@@ -110,6 +110,44 @@ $(document).ready(function(){
 					identical: {
 						field: 'password',
 						message: 'The password and its confirm are not the same'
+					},
+					notEmpty: {
+						message: 'The confirm password is required'
+					}
+				}
+			},
+			newPassword: {
+				validators: {
+					identical: {
+						field: 'conPassword',
+						message: 'The new password and its confirm password are not the same'
+					},
+					stringLength: {
+						min: 6,
+						max: 20,
+						message: 'The new password must be more than 6 and less than 20 characters long'
+					},
+
+					notEmpty: {
+						message: 'The new password is required'
+					}
+				}
+			},
+			conPassword: {
+				validators: {
+					identical: {
+						field: 'newPasswordd',
+						message: 'The new password and its confirm password are not the same'
+					},
+					notEmpty: {
+						message: 'The confirm password is required'
+					}
+				}
+			},
+			curPassword: {
+				validators: {
+					notEmpty: {
+						message: 'The current password is required'
 					}
 				}
 			},

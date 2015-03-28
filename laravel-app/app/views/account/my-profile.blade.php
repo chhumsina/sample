@@ -71,7 +71,7 @@
 				</a>
 				<div class="collapse" id="changePassword">
 					<div class="well">
-						<?php echo Form::open(array('url' => 'member/change_password','role' => 'form', 'class'=>'form-horizontal','id'=>'')) ?>
+						<?php echo Form::open(array('url' => 'member/change_password','role' => 'form', 'class'=>'form-horizontal','id'=>'validationForm')) ?>
 						<fieldset>
 
 							<div class="form-group">

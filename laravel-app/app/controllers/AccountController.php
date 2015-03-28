@@ -303,13 +303,25 @@ class AccountController extends \BaseController {
 		{
 			$msgs = array();
 			if (Input::has('curPassword')) {
+				$curPassword = Input::get('curPassword');
+				$newPassword = Input::get('newPassword');
+
 				$user = Auth::user();
-				if (Hash::check(Input::get('curPassword'), $user->password)) {
+				if (Hash::check($newPassword, $user->password)) {
 					if (Input::has('newPassword') && Input::has('conPassword')) {
-						if (Input::get('newPassword') == Input::get('conPassword')) {
-							$newPassword = Hash::make(Input::get('newPassword'));
+						if ($newPassword == Input::get('conPassword')) {
+							$newPassword = Hash::make($newPassword);
 							$user->password = $newPassword;
 							$user->save();
+
+							$email = $user->email;
+							$username = $user->username;
+
+							$messages = array('curpassword'=>$curPassword,'newpassword' => $newPassword, 'username' => $username);
+
+							Mail::send('email.change-password', $messages, function ($message) use ($email,$username) {
+								$message->to($email, $username)->subject('Khmermoo.com : Change Password');
+							});
 
 							$msg = array('type'=>'success','msg'=>'Password changed successfully!');
 							array_push($msgs,$msg);
