@@ -137,7 +137,7 @@ class AccountController extends \BaseController {
 		$user = Auth::user();
 
 		if ($auth) {
-			if ($user->status == 1 && $user->use_type == 2) {
+			if ($user->disable == 0 && $user->role_id == 1) {
 				return Redirect::to('member/manage_ads');
 			} else {
 				$sms = 'This account not yet active!';

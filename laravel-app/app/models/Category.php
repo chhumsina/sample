@@ -1,6 +1,6 @@
 <?php
 
 class Category extends \Eloquent {
-	protected $table = 'category';
+	protected $table = 'tbl_category';
 	protected $fillable = array();
 }

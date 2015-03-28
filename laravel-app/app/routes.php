@@ -78,6 +78,11 @@ Route::group(array('before' => 'auth'), function() {
 	Route::resource('member', 'MemberController');
 	Route::when('member*', 'member');
 
+    // Category Management
+    Route::get('backend/category/list', 'CategoryMgController@index');
+    Route::post('backend/category/list', 'CategoryMgController@index');
+    Route::resource('backend/category', 'CategoryMgController');
+
 });
 Route::controller('sys-automates', 'SysAutomateReportController');
 
